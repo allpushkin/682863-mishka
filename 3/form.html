@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка, каталог товаров</title>
+    <base href="https://htmlacademy-adaptive.github.io/682863-mishka/3/">
+</head>
+  <body>
+
+    <header class="header-page">
+      <a class="header-page__logo" href="index.html">
+        <img class="header-page__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка, магазин вязаных изделий">
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            Открыть меню
+          </button>
+          <ul class="main-nav__site-list  site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">
+                Каталог товаров
+              </a>  
+            </li>
+            <li class="site-list__item">
+              <a>
+                Вязание на заказ
+              </a>
+            </li>
+            <li class="site-list__item  search-item">
+              <a href="#">
+                Поиск по сайту
+              </a>
+            </li>
+            <li class="site-list__item  basket-item">
+              <a href="#">
+                Корзина: пока пусто
+              </a>
+            </li>
+          </ul>
+        </div>  
+      </nav>        
+    </header>
+
+    <main class="main-page">
+
+      <h1 class="visually-hidden">
+          Вязание на заказ по Вашим эскизам и желаниям
+      </h1>
+
+      <section class="order">
+        <div class="order__wrapper">
+          <h2 class="order__title">
+            Вязание на заказ
+          </h2>
+          <p class="order__text  text">
+            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
+          <form class="order__filter  filter-type" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-type  type">
+              <legend class="filter-type__title">
+                Тип
+              </legend>
+              <ul class="filter-type__list">
+                <li class="filter-type__list-item">
+                  <input class="visually-hidden  filter-type__input  filter-type__input--radio" type="radio" name="type" value="Accessory" id="accessory" checked>
+                  <label class="filter-type__label" for="accessory">
+                    Аксессуар для интерьера
+                  </label>
+                </li>
+                <li class="filter-type__list-item">
+                  <input class="visually-hidden  filter-type__input  filter-type__input--radio" type="radio" name="type" value="Toy" id="toy">
+                  <label class="filter-type__label" for="toy">
+                    Детская игрушка
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="filter-color  color">
+              <legend class="filter-color__title">
+                Цвет
+              </legend>
+              <ul class="filter-color__list">
+                <li class="filter-color__list-item">
+                  <input class="visualli-hidden  filter-color__input  filter-color__input--checkbox" type="checkbox" name="White" id="color-white" checked>
+                  <label class="filter-color__label" for="color-white">
+                    Белый
+                  </label>
+                </li>
+                <li class="filter-color__list-item">
+                  <input class="visually-hidden  filter-color__input  filter-color__input--checkbox" type="checkbox" name="Gray" id="color-gray" checked>
+                  <label class="filter-color__label" for="color-gray">
+                    Серый
+                  </label>
+                </li>
+                <li class="filter-color__list-item">
+                  <input class="visually-hidden  filter-color__input  filter-color__input--checkbox" type="checkbox" name="Tiffany" id="color-tiffany">
+                  <label class="filter-color__label" for="color-tiffany">
+                    «Тиффани»
+                  </label>
+                </li>
+                <li class="filter-color__list-item">
+                  <input class="visualli-hidden  filter-color__input  filter-color__input--checkbox" type="checkbox" name="Black" id="color-black">
+                  <label class="filter-color__label" for="color-black">
+                    Черный
+                  </label>
+                </li>
+                <li class="filter-color__list-item">
+                  <input class="visualli-hidden  filter-color__input  filter-color__input--checkbox" type="checkbox" name="Pink" id="color-pink">
+                  <label class="filter-color__label" for="color-pink">
+                    Розовый
+                  </label>
+                </li>
+                <li class="filter-color__list-item">
+                  <input class="visualli-hidden  filter-color__input  filter-color__input--checkbox" type="checkbox" name="Orange" id="color-orange">
+                  <label class="filter-color__label" for="color-orange">
+                    Оранжевый
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-initials  initials">
+              <legend class="form-initials__title">
+                ФИО
+              </legend>
+              <ul class="form-initials__list">
+                <li class="form-initials__list-item">
+                  <label class="form-initials__label" for="your-name">
+                    Имя:
+                  </label>
+                  <input class="form-initials__input" type="text" name="Name" placeholder="Введите ваше имя*" id="your-name" required>
+                </li>
+                <li class="form-initials__list-item">
+                  <label class="form-initials__label" for="your-surname">
+                    Фамилия:
+                  </label>
+                  <input class="form-initials__input" type="text" name="Surname" placeholder="Укажите фамилию*" id="your-surname" required>
+                </li>
+                <li class="form-initials__list-item">
+                  <label class="form-initials__label" for="your-patronymic">
+                    Отчество:
+                  </label>
+                  <input class="form-initials__input" type="text" name="Name" placeholder="Отчество, если желаете" id="your-patronymic">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-telephone  telephone">
+              <legend class="form-telephone__title">
+                Тел
+              </legend>              
+                <input class="form-telephone__input" type="tel" name="Telephone" placeholder="+7 XXX XXX XX XX*" required>
+            </fieldset>
+            <fieldset class="form-email  email">
+              <legend class="form-email__title">
+                E-mail
+              </legend>
+                <input class="form-email__input" type="email" name="E-mail" placeholder="Ваш Email*" required>
+            </fieldset>
+            <fieldset class="form-telephone  telephone">
+              <legend class="form-telephone__title">
+                Доп
+              </legend>
+                <textarea class="form-telephone__input" name="Whishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p class="order__text  text">
+              *Поля обязательны для заполнения
+            </p>
+            <button class="order__button  button  button-order" type="submit">
+              Отправить заказ
+            </button>
+          </form>
+        </div>
+      </section>
+
+    
+    </main>
+
+    <footer class="footer-page">
+      <div class="footer-page__wrapper">
+        <div class="footer-page__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link  social__link--instagram" href="#">
+                <img src="http://placehold.it/22x21" width="22" height="21" alt="Мы в интстаграме">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--facebook" href="#">
+                <img src="http://placehold.it/15x28" width="15" height="28" alt="Мы в фейсбуке">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link  social__link--twitter" href="#">
+                <img src="http://placehold.it/23x20" width="23" height="20" alt="Мы в твиттере">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-page__developed">
+          <p class="developed__text">
+            Разработано
+          </p>
+          <a class="developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="http://placehold.it/27x34" width="27" height="34" alt="Интерактивные курсы htmlacademy">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
