@@ -7,8 +7,8 @@
   <body>
 
     <header class="header-page">
-      <a class="header-page__logo" href="index.html">
-        <img class="header-page__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка, магазин вязаных изделий">
+      <a class="header-page__logo  main-logo" href="index.html">
+        <img class="header-page__logo-image  main-logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка, магазин вязаных изделий">
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -19,7 +19,7 @@
             <li class="site-list__item">
               <a>
                 Каталог товаров
-              </a>  
+              </a>
             </li>
             <li class="site-list__item">
               <a href="form.html">
@@ -37,8 +37,8 @@
               </a>
             </li>
           </ul>
-        </div>  
-      </nav>        
+        </div>
+      </nav>
     </header>
 
     <main class="main-page">
@@ -49,42 +49,42 @@
 
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h2>
+          <h2 class="catalog__title  top-title">
             Каталог товаров
           </h2>
-          <div class="catalog__item  item__rabbit">
-            <img class="item__rabbit-image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик за 1200 рублей">
-            <h3 class="item__title">
+          <div class="catalog__item  rabbit">
+            <img class="rabbit__image" src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик за 1200 рублей">
+            <h3 class="rabbit__title  title">
               Зайчик-попрыгайчик
             </h3>
-            <p class="item__text  text">
+            <p class="rabbit__text  text">
               Рост 30 см, вес 200 г
             </p>
-            <p class="item__price">
+            <p class="rabbit__price  price">
               1 200 руб.
             </p>
           </div>
-          <div class="catalog__item item__basket">
-            <img class="item__basket-image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья зя 600 рублей">
-            <h3 class="item__title">
+          <div class="catalog__item  basket">
+            <img class="basket__image" src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья зя 600 рублей">
+            <h3 class="basket__title  title">
               Корзинка для белья
             </h3>
-            <p class="item__text  text">
+            <p class="basket__text  text">
               Диаметр 15 см, высота 10 см
             </p>
-            <p class="item__price">
+            <p class="basket__price  price">
               690 руб.
             </p>
           </div>
-          <div class="catalog__item  item__big-basket">
-            <img class="item__big-basket-image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек за 1500 рублей">
-            <h3 class="item__title">
+          <div class="catalog__item  big-basket">
+            <img class="big-basket__image" src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек за 1500 рублей">
+            <h3 class="bit-basket__title  title">
               Большая корзинка для игрушек
             </h3>
-            <p class="item__text  text">
+            <p class="big-basket__text  text">
               Диаметр 30 см, высота 30 см
             </p>
-            <p class="item__price">
+            <p class="big-basket__price  price">
               1 500 руб.
             </p>
           </div>
@@ -128,7 +128,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer-page__developed">
+        <div class="footer-page__developed  developed">
           <p class="developed__text">
             Разработано
           </p>
@@ -144,20 +144,20 @@
         Выбрать размер и добавить в корзину
       </h2>
       <div class="modal__wrapper">
-        <h3>
+        <h3 class="modal__title">
           Добавить в корзину
         </h3>
         <p class="modal__text  text>
           Выберите размер:
         </p>
         <ul class="modal__size">
-          <li class="modal__size-item  modal__size-item--S">
+          <li class="modal__size-item  modal__size-item--small">
             S
           </li>
-          <li class="modal__size-item  modal__size-item--M">
+          <li class="modal__size-item  modal__size-item--medium">
             M
           </li>
-          <li class="modal__size-item  modal__size-item--L">
+          <li class="modal__size-item  modal__size-item--large">
             L
           </li>
         </ul>
