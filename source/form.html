@@ -7,7 +7,7 @@
   <body>
 
     <header class="header-page">
-      <a class="header-page__logo  main-logo" href="index.html">
+      <a class="main-logo" href="index.html">
         <img class="main-logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка, магазин вязаных изделий">
       </a>
       <nav class="main-nav">
@@ -15,7 +15,7 @@
           <button class="main-nav__toggle" type="button">
             Открыть меню
           </button>
-          <ul class="main-nav__site-list  site-list">
+          <ul class="site-list">
             <li class="site-list__item">
               <a href="catalog.html">
                 Каталог товаров
@@ -49,13 +49,15 @@
 
       <section class="order">
         <div class="order__wrapper">
-          <h2 class="order__title  top-title">
-            Вязание на заказ
-          </h2>
+          <div class="top-title">
+            <h2 class="top-title__order">
+              Вязание на заказ
+            </h2>
+          </div>
           <p class="order__text  text">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <form class="order__filter  filter-type" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter-type" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-type  type">
               <legend class="filter-type__title">
                 Тип
@@ -175,7 +177,7 @@
 
     <footer class="footer-page">
       <div class="footer-page__wrapper">
-        <div class="footer-page__social social">
+        <div class="social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link  social__link--instagram" href="#">
