@@ -1,0 +1,52 @@
+@mixin background ($dir) {
+  background-image: url($dir);
+  background-repeat: no-repeat;
+}
+
+.site-list {
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  padding-left: 76px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid black;
+
+  list-style: none;
+}
+
+.site-list__link {
+  font-family: $font-title;
+  @include font (17px, 24px);
+  color: $color-title;
+
+  position: relative;
+
+  &--search::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    right: 145px;
+
+    width: 18px;
+    height: 18px;
+
+    @include background ('../../img/icon-search.svg');
+  }
+
+  &--basket::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    right: 190px;
+
+    width: 21px;
+    height: 18px;
+
+    @include background ('../../img/icon-cart.svg');
+  }
+}

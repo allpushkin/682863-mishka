@@ -1,0 +1,66 @@
+$color-lightblue: hsl(171, 56, 76);
+$color-white: hsl(0, 0, 100);
+
+.option__container-image {
+  min-height: 283px;
+
+  background-color: hsl(0, 0, 98);
+  @include background ('../../img/hero-mobile@1x.jpg');
+  background-position: 50% 50%;
+}
+
+.option__title {
+  font-family: $font-title;
+  @include font (27px, 30px);
+
+  text-align: center;
+}
+
+.option-list {
+  padding: 0;
+  margin: 0;
+}
+
+.option-list__item {
+  padding-left: 20px;
+  min-height: 103px;
+  min-width: 320px;
+
+  background-color: $color-lightblue;
+
+  list-style: none;
+}
+
+.option-list__link {
+  position: relative;
+
+  font-family: $font-title;
+  @include font (19px, 24px);
+  color: $color-white;
+
+  &--accessories::after {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 220px;
+
+    width: 60px;
+    height: 60px;
+
+    @include background ('../../img/icon-interior.svg');
+  }
+
+  &--toys::after {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 220px;
+
+    width: 60px;
+    height: 60px;
+
+    @include background ('../../img/icon-toy.svg');
+  }
+}
