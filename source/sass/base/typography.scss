@@ -1,13 +1,3 @@
-$font-text: 'Open-sans', 'Arial', sans-serif;
-$font-title: 'Open-sans bold', 'Arial', sans-serif;
-$color-text: hsl(0, 0, 27%);
-$color-title: hsl(0, 0, 0);
-
-@mixin font ($size, $line) {
-  font-size: $size;
-  line-height: $line;
-}
-
 .body-page {
   font-family: $font-text;
 }

@@ -1,0 +1,18 @@
+.review__text {
+  @include font(15px, 30px);
+}
+
+.review__author {
+  font-family: $font-title;
+  @include font(17px, 24px);
+  color: $color-title;
+}
+
+.review__author-text {
+  @include font(17px, 30px);
+  font-style: normal;
+}
+
+.review__comment-list-item {
+  list-style: none;
+}

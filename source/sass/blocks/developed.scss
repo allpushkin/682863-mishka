@@ -1,0 +1,5 @@
+.developed__text {
+  font-family: $font-title;
+  @include font(19px, 18px);
+  color: $color-title;
+}
