@@ -1,0 +1,41 @@
+.order__text {
+  @include font(13px, 24px);
+}
+
+.order__form {
+  border: none;
+
+  position: relative;
+}
+
+.order__form-list-item {
+  list-style: none;
+}
+
+.order__form-title {
+  font-family: $font-title;
+  @include font(17px, 16px);
+  color: $color-lightblue;
+
+  text-transform: uppercase;
+}
+
+.order__form-label {
+  display: block;
+}
+
+.order__form-input {
+
+  &--tel::after {
+    content: "asfsdgfg";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 25px;
+    height: 25px;
+
+    @include background('../../img/icon-phone.svg');
+  }
+}
