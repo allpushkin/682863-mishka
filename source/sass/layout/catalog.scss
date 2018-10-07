@@ -3,8 +3,8 @@
 }
 
 .catalog__item-price {
-  font-family: $font-title;
   @include font(15px, 24px);
+  font-family: $font-title;
   color: $color-title;
 
   position: relative;

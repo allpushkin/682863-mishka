@@ -3,9 +3,9 @@
 }
 
 .order__form {
-  border: none;
-
   position: relative;
+
+  border: none;
 }
 
 .order__form-list-item {
@@ -13,10 +13,9 @@
 }
 
 .order__form-title {
-  font-family: $font-title;
   @include font(17px, 16px);
+  font-family: $font-title;
   color: $color-lightblue;
-
   text-transform: uppercase;
 }
 

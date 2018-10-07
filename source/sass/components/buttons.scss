@@ -4,11 +4,9 @@
   width: 260px;
   border: 1px solid $color-text;
 
-  font-family: $font-title;
   @include font (17px, 40px);
+  font-family: $font-title;
   color: $color-text;
-
   text-align: center;
-
   text-transform: uppercase;
 }
