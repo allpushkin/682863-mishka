@@ -4,8 +4,8 @@
 
 .review__author {
   font-family: $font-title;
-  @include font(17px, 24px);
   color: $color-title;
+    @include font(17px, 24px);
 }
 
 .review__author-text {

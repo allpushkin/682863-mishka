@@ -3,14 +3,15 @@
   padding-top: 50px;
 
   font-family: $font-title;
-  @include font(17px, 20px);
 
   list-style: none;
+
+    @include font(17px, 20px);
 }
 
 .advantages__icon {
   display: block;
-  path {
-    fill: $color-lightblue;
+    path {
+      fill: $color-lightblue;
   }
 }
