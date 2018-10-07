@@ -1,29 +1,19 @@
-@import
-
-  "abstracts/variables",
+@import "abstracts/variables",
   "abstracts/mixins";
 
-@import
-
-  "base/normalize.scss",
+@import "base/normalize.scss",
   "base/base.scss",
   "base/typography.scss",
   "base/fonts.scss";
 
-@import
+@import "components/buttons.scss";
 
-  "components/buttons.scss";
-
-@import
-
-  "layout/main-nav.scss",
+@import "layout/main-nav.scss",
   "layout/catalog.scss",
   "layout/footer-page.scss",
   "layout/order.scss";
 
-@import
-
-  "blocks/option.scss",
+@import "blocks/option.scss",
   "blocks/week-product.scss",
   "blocks/advantages.scss",
   "blocks/review.scss",

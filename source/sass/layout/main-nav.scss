@@ -29,7 +29,7 @@
     width: 18px;
     height: 18px;
 
-    @include background ('../../img/icon-search.svg');
+    @include background ("../../img/icon-search.svg");
   }
 
   &--basket::before {
@@ -42,6 +42,6 @@
     width: 21px;
     height: 18px;
 
-    @include background ('../../img/icon-cart.svg');
+    @include background ("../../img/icon-cart.svg");
   }
 }

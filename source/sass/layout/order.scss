@@ -24,9 +24,8 @@
 }
 
 .order__form-input {
-
   &--tel::after {
-    content: "asfsdgfg";
+    content: "";
 
     position: absolute;
     top: 0;
@@ -35,6 +34,6 @@
     width: 25px;
     height: 25px;
 
-    @include background('../../img/icon-phone.svg');
+    @include background("../../img/icon-phone.svg");
   }
 }
