@@ -1,18 +1,18 @@
+//
 @import "abstracts/variables",
   "abstracts/mixins";
-
+//
 @import "base/normalize.scss",
   "base/base.scss",
   "base/typography.scss",
   "base/fonts.scss";
-
 @import "components/buttons.scss";
-
+//
 @import "layout/main-nav.scss",
   "layout/catalog.scss",
   "layout/footer-page.scss",
   "layout/order.scss";
-
+//
 @import "blocks/option.scss",
   "blocks/week-product.scss",
   "blocks/advantages.scss",
