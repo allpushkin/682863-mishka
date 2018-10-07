@@ -4,13 +4,15 @@
 
 .text {
   font-family: $font-text;
-  @include font(15px, 24px);
   color: $color-text;
+
+  @include font(15px, 24px);
 }
 
 .title {
   font-family: $font-title;
-  @include font(25px, 30px);
   font-weight: bold;
   color: $color-title;
+
+  @include font(25px, 30px);
 }
