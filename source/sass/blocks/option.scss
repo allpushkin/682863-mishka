@@ -2,12 +2,15 @@
   min-height: 283px;
 
   background-color: hsl(0, 0, 98);
+
   @include background("../../img/hero-mobile@1x.jpg");
+
   background-position: 50% 50%;
 }
 
 .option__title {
   font-family: $font-title;
+
   @include font(27px, 30px);
 
   text-align: center;
@@ -32,7 +35,9 @@
   position: relative;
 
   font-family: $font-title;
+
   @include font(19px, 24px);
+
   color: $color-white;
 
   &--accessories::after {

@@ -6,12 +6,13 @@
 
   list-style: none;
 
-    @include font(17px, 20px);
+  @include font(17px, 20px);
 }
 
 .advantages__icon {
   display: block;
-    path {
-      fill: $color-lightblue;
+
+  path {
+    fill: $color-lightblue;
   }
 }
