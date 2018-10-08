@@ -1,0 +1,16 @@
+.body-page {
+  font-family: $font-text;
+}
+
+.text {
+  @include font(15px, 24px);
+  font-family: $font-text;
+  color: $color-text;
+}
+
+.title {
+  @include font(25px, 30px);
+  font-family: $font-title;
+  font-weight: bold;
+  color: $color-title;
+}

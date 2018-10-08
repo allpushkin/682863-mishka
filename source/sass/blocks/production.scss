@@ -1,0 +1,35 @@
+.production {
+  margin-bottom: 50px;
+}
+
+.production__wrapper {
+  padding-left: 40px;
+}
+
+.production__title-icon {
+  fill: $color-lightblue;
+}
+
+.production__title {
+  @include font(17px, 24px);
+}
+
+.production__image-wrapper {
+  position: relative;
+
+  padding-bottom: 15px;
+}
+
+.production__image-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.production__text {
+  @include font(13px, 24px);
+
+  padding-bottom: 15px;
+}

@@ -1,0 +1,11 @@
+.top-title {
+  min-width: 320px;
+  min-height: 177px;
+
+  @include font(19px, 177px);
+  font-family: $font-title;
+  color: $color-title;
+  text-align: center;
+
+  background-color: hsl(0, 0, 95%);
+}

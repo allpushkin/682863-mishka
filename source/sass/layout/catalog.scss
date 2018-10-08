@@ -1,0 +1,24 @@
+.catalog__item {
+  list-style: none;
+}
+
+.catalog__item-price {
+  @include font(15px, 24px);
+  font-family: $font-title;
+  color: $color-title;
+
+  position: relative;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    width: 20px;
+    height: 20px;
+
+    @include background("../../img/icon-cart.svg");
+  }
+}

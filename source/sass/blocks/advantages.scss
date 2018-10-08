@@ -1,0 +1,18 @@
+.advantages__list-item {
+  @include font(17px, 20px);
+
+  position: relative;
+  padding-top: 50px;
+
+  font-family: $font-title;
+
+  list-style: none;
+}
+
+.advantages__icon {
+  display: block;
+
+  path {
+    fill: $color-lightblue;
+  }
+}
