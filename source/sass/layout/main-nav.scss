@@ -1,15 +1,26 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-nav__item {
-  padding-left: 76px;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 1px solid black;
+  padding-left: 30%;
 
-  list-style: none;
+  text-align: left;
+
+  border-top: 1px solid black;
 }
 
 .main-nav__link {

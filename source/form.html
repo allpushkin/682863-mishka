@@ -66,17 +66,17 @@
       </h1>
 
       <section class="order">
+        <div class="top-title">
+          <h2 class="top-title__order  top-title">
+            Вязание на заказ
+          </h2>
+        </div>
         <div class="order__wrapper">
-          <div class="top-title">
-            <h2 class="top-title__order">
-              Вязание на заказ
-            </h2>
-          </div>
           <p class="order__text  text">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <form method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="order__form  order__type">
+          <form class="order__form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="order__form-field  order__type">
               <legend class="order__form-title">
                 Тип
               </legend>
@@ -95,7 +95,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="order__form  order__color">
+            <fieldset class="order__form-field  order__color">
               <legend class="order__form-title">
                 Цвет
               </legend>
@@ -138,7 +138,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="order__form  initials">
+            <fieldset class="order__form-field  initials">
               <legend class="order__form-title">
                 ФИО
               </legend>
@@ -163,27 +163,27 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="order__form  telephone">
+            <fieldset class="order__form-field  telephone">
               <legend class="order__form-title">
                 Тел
               </legend>
-                <input class="order__form-input  order__form-input--tel" type="tel" name="Telephone" placeholder="+7 XXX XXX XX XX*" required>
+              <input class="order__form-input  order__form-input--tel" type="tel" name="Telephone" placeholder="+7 XXX XXX XX XX*" required>
             </fieldset>
-            <fieldset class="order__form  form-email  email">
+            <fieldset class="order__form-field  form-email  email">
               <legend class="order__form-title">
                 E-mail
               </legend>
-                <input class="order__form-input  order__form-input--mail" type="email" name="E-mail" placeholder="Ваш Email*" required>
+              <input class="order__form-input  order__form-input--mail" type="email" name="E-mail" placeholder="Ваш Email*" required>
             </fieldset>
-            <fieldset class="order__form  telephone">
+            <fieldset class="order__form-field  telephone">
               <legend class="order__form-title">
                 Доп
               </legend>
-                <textarea class="order__form-input" name="Whishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <textarea class="order__form-input" name="Whishes" rows="5" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <p class="order__explanation  text">
+                *Поля обязательны для заполнения
+              </p>
             </fieldset>
-            <p class="order__text  text">
-              *Поля обязательны для заполнения
-            </p>
             <button class="order__button  button  button-order" type="submit">
               Отправить заказ
             </button>

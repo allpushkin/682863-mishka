@@ -1,5 +1,26 @@
+.catalog__wrapper {
+  width: 260px;
+  margin: 0 auto;
+}
+
+.catalog__list {
+  @include list-reset();
+}
+
 .catalog__item {
-  list-style: none;
+  margin-bottom: 30px;
+  border: 1px solid #ececec;
+}
+
+.catalog__container-description {
+  padding-left: 28px;
+}
+
+.catalog__item-title {
+  margin: 0;
+  padding-top: 20px;
+
+  @include font(17px, 24px);
 }
 
 .catalog__item-price {

@@ -6,9 +6,13 @@
   "base/base.scss",
   "base/typography.scss",
   "base/fonts.scss";
+//
+@import "common/body-page.scss";
+//
 @import "components/buttons.scss";
 //
-@import "layout/main-nav.scss",
+@import "layout/header.scss",
+  "layout/main-nav.scss",
   "layout/catalog.scss",
   "layout/footer-page.scss",
   "layout/order.scss";
@@ -20,4 +24,5 @@
   "blocks/social.scss",
   "blocks/developed.scss",
   "blocks/top-title.scss",
-  "blocks/production.scss";
+  "blocks/production.scss",
+  "blocks/contacts.scss";
