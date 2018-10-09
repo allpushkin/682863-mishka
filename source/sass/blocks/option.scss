@@ -15,8 +15,7 @@
 }
 
 .option-list {
-  padding: 0;
-  margin: 0;
+  @include list-reset();
 }
 
 .option-list__item {
@@ -25,8 +24,6 @@
   min-width: 320px;
 
   background-color: $color-lightblue;
-
-  list-style: none;
 }
 
 .option-list__link {

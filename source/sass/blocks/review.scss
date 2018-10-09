@@ -13,6 +13,6 @@
   font-style: normal;
 }
 
-.review__comment-list-item {
-  list-style: none;
+.review__comment-list {
+  @include list-reset();
 }
