@@ -3,7 +3,17 @@
 }
 
 .production__wrapper {
-  padding-left: 40px;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 33px;
+  border: 1px solid #ececec;
+}
+
+.production__container-title {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 26px;
 }
 
 .production__title-icon {
@@ -11,6 +21,8 @@
 }
 
 .production__title {
+  width: 130px;
+
   @include font(17px, 24px);
 }
 
@@ -29,7 +41,13 @@
 }
 
 .production__text {
-  @include font(13px, 24px);
+  width: 185px;
+  margin:0 auto;
+  padding-bottom: 30px;
 
-  padding-bottom: 15px;
+  @include font(13px, 24px);
+}
+
+.production__button-buy {
+  width: 192px;
 }
