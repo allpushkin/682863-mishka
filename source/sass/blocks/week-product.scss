@@ -1,16 +1,25 @@
+.week-product {
+  margin-bottom: 73px;
+}
+
+.week-product__title {
+  margin-bottom: 5px;
+}
+
 .week-product__subtitle {
   color: $color-lightblue;
-
   text-transform: uppercase;
 }
 
 .week-product__description {
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 .week-product__features {
-  padding-bottom: 20px;
+  margin-bottom: 28px;
+
+  border-spacing: 20px 0;
 }
 
 .week-product__price {

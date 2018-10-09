@@ -1,4 +1,19 @@
+.review {
+  margin-bottom: 92px;
+}
+
+.review__wrapper {
+  width: 265px;
+  margin: 0 auto;
+}
+
+.review__title {
+  margin-bottom: 38px;
+}
+
 .review__text {
+  margin-bottom: 38px;
+
   @include font(15px, 30px);
 }
 
@@ -15,4 +30,15 @@
 
 .review__comment-list {
   @include list-reset();
+
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  margin-bottom: 38px;
+}
+
+.review__comment-link {
+  display: block;
+  padding: 13px 42px;
+  border: 1px solid gray;
 }
