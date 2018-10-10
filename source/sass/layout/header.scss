@@ -2,11 +2,12 @@
   position: relative;
 }
 
-.header-page__logo {
-  display: block;
-  height: 80px;
-  width: 100%;
-  padding-top: 30px;
-
-  text-align: center;
+@media (min-width: $tablet-width) {
+  .header-page {
+    background: linear-gradient(to bottom,
+              transparent 0px,
+              transparent 88px,
+              #fafafa 88px,
+              #fafafa 180px);
+  }
 }
