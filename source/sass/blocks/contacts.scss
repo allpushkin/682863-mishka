@@ -21,3 +21,15 @@
   display: block;
   margin-bottom: 40px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    width: auto;
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    @include font(43px, 50px);
+  }
+}
