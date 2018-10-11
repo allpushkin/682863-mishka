@@ -33,3 +33,27 @@
 
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .week-product__wrapper {
+    width: auto;
+    padding: 0 50px;
+  }
+
+  .week-product__container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .week-product__title {
+    @include font(43px, 42px);
+  }
+
+  .week-product__subtitle {
+    width: 77px;
+
+    @include font(17px, 19px);
+    text-align: center;
+  }
+}
