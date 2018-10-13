@@ -16,3 +16,11 @@
 .top-title__order {
   margin-top: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .top-title__catalog,
+  .top-title__order {
+    @include font(53px, 57px);
+    padding-top: 50px;
+  }
+}

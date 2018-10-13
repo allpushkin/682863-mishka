@@ -101,6 +101,7 @@
   .order__form {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 65px;
   }
@@ -145,5 +146,16 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__wrapper {
+    width: 1150px;
+    padding: 0 114px;
+  }
+
+  .order__text {
+    width: 672px;
   }
 }

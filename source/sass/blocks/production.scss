@@ -90,3 +90,45 @@
     border: 2px solid #444444;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .production__wrapper {
+    width: 1050px;
+    min-height: 455px;
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .production__container-title {
+    width: 300px;
+    min-height:100px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .production__image-wrapper {
+    width: 682px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .production__image-play {
+    top: 225%;
+  }
+
+  .production__container-text {
+    margin-left: auto;
+  }
+
+  .production__text {
+    width: 230px;
+  }
+
+  .production__button-buy {
+    width: 230px;
+  }
+}
