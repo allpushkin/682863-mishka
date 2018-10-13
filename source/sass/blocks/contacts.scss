@@ -42,3 +42,34 @@
     border: 2px solid #444444;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts__wrapper {
+    width: 1050px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__container-address {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+
+  .contacts__adds {
+    td {
+      width: 220px;
+    }
+  }
+
+  .contacts__map {
+    width: 525px;
+    height: 360px;
+    margin-top: -70px;
+  }
+
+  .contacts__feedback {
+    margin: 0;
+  }
+}

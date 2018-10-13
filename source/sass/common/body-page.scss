@@ -8,3 +8,9 @@
     min-width: 772px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .body-page {
+    min-width: 1150px;
+  }
+}

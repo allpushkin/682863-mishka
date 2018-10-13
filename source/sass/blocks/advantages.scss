@@ -55,3 +55,15 @@
     width: 295px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    width: 650px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .advantages__title {
+    @include font(53px, 57px);
+  }
+}

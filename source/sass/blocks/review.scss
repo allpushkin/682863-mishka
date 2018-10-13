@@ -87,3 +87,19 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .review__wrapper {
+    width: 1050px;
+    padding: 0;
+  }
+
+  .review__title {
+    @include font(53px, 57px);
+  }
+
+  .review__text {
+    width: 768px;
+    margin-right: 50px;
+  }
+}

@@ -27,8 +27,9 @@
 }
 
 .option-list__item {
-  padding-top: 39px;
-  padding-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   min-height: 103px;
   min-width: 320px;
 
@@ -41,30 +42,22 @@
   @include font(19px, 24px);
   font-family: $font-title;
   color: $color-white;
+}
 
-  &--accessories::after {
-    content: "";
-
-    position: absolute;
-    top: -20px;
-    left: 220px;
-
-    width: 60px;
-    height: 60px;
-
-    @include background("../../img/icon-interior.svg");
+@media (min-width: $desktop-width) {
+  .option__title {
+    @include font(53px, 57px);
+    width: 615px;
+    margin: auto;
+  }
+  .option__container-image {
+    min-height: 450px;
+  }
+  .option-list {
+    display: flex;
   }
 
-  &--toys::after {
-    content: "";
-
-    position: absolute;
-    top: -20px;
-    left: 220px;
-
-    width: 60px;
-    height: 60px;
-
-    @include background("../../img/icon-toy.svg");
+  .option-list__item {
+    width: 100%;
   }
 }
