@@ -10,6 +10,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--update {
+    display: none;
+  }
 }
 
 .main-nav__item {
@@ -108,6 +112,41 @@
   .main-nav__list--user {
     &:first-child {
       min-width: 80px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
+  .main-nav__list {
+    &--navigation {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 600px;
+    }
+
+    &--update {
+      @include font(15px, 24px);
+      font-family: $font-title;
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+      margin-right: auto;
+
+      a {
+        color: $color-title;
+      }
+    }
+  }
+
+  .main-nav__item {
+    &--logo {
+      margin: 0;
     }
   }
 }
