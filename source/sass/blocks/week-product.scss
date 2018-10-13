@@ -46,6 +46,11 @@
     align-items: center;
   }
 
+  .week-product__container-description {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .week-product__title {
     @include font(43px, 42px);
   }
