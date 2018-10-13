@@ -43,3 +43,20 @@
     @include background("../../img/icon-cart.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    width: auto;
+  }
+
+  .catalog__item {
+    display: flex;
+    min-height: 334px;
+  }
+
+  .catalog__container-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
