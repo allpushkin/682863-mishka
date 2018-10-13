@@ -28,6 +28,11 @@
   @include list-reset();
 }
 
+.order__form-list-item {
+  @include font(19px, 18px);
+  font-family: $font-title;
+}
+
 .order__form-title {
   position: relative;
 
@@ -69,6 +74,7 @@
 
 .order__explanation {
   @include font(14px, 16px);
+  margin-top: -100px;
 }
 
 .order__button {
@@ -76,5 +82,68 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order__wrapper {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order__text {
+    @include font(17px, 30px);
+    width: 615px;
+    margin-bottom: 60px;
+  }
+
+  .order__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 65px;
+  }
+
+  .order__color {
+    background-color: #f1f1f1;
+  }
+
+  .order__form-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 501px;
+    margin-left: 218px;
+  }
+
+  .order__form-list-item {
+    display: flex;
+  }
+
+  .order__form-input {
+    &--tel,
+    &--mail,
+    &--text {
+      margin-left: 217px;
+    }
+  }
+
+  .order__form-title {
+    margin-bottom: -24px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .order__explanation {
+    margin: 0;
+  }
+
+  .order__form-container-text {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
   }
 }
