@@ -102,16 +102,14 @@
 
     &--user {
       width: 400px;
+
+      &:first-child {
+        min-width: 80px;
+      }
     }
 
     &--navigation {
       width: 370px;
-    }
-  }
-
-  .main-nav__list--user {
-    &:first-child {
-      min-width: 80px;
     }
   }
 }

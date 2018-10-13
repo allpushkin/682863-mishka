@@ -42,7 +42,7 @@
 
 .production__text {
   width: 185px;
-  margin:0 auto;
+  margin: 0 auto;
   padding-bottom: 30px;
 
   @include font(13px, 24px);
@@ -103,7 +103,7 @@
 
   .production__container-title {
     width: 300px;
-    min-height:100px;
+    min-height: 100px;
     padding: 0;
     margin: 0;
   }
