@@ -1,5 +1,5 @@
 .advantages {
-  margin-bottom: 30px;
+  margin-bottom: 56px;
 }
 
 .advantages__wrapper {
@@ -13,11 +13,13 @@
 
 .advantages__list {
   @include list-reset();
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 710px;
 }
 
 .advantages__list-item {
-  padding-bottom: 30px;
-
   @include font(17px, 20px);
   font-family: $font-title;
 }

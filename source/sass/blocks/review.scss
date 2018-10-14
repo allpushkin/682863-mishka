@@ -1,5 +1,5 @@
 .review {
-  margin-bottom: 92px;
+  margin-bottom: 87px;
 }
 
 .review__wrapper {
@@ -8,11 +8,11 @@
 }
 
 .review__title {
-  margin-bottom: 38px;
+  margin-bottom: 24px;
 }
 
 .review__text {
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 
   @include font(15px, 30px);
 }
@@ -28,18 +28,22 @@
   font-style: normal;
 }
 
+.review__author-container {
+  margin-bottom: 30px;
+}
+
 .review__comment-list {
   @include list-reset();
 
   display: flex;
-  justify-content: space-between;
-  padding-top: 36px;
-  margin-bottom: 38px;
+  justify-content: center;
+  margin-bottom: 35px;
 }
 
 .review__comment-link {
   display: block;
-  padding: 13px 42px;
+  width: 130px;
+  padding: 13px 37px;
   border: 1px solid gray;
 }
 

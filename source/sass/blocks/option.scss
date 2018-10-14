@@ -1,11 +1,11 @@
 .option {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .option__container-image {
-  min-height: 283px;
+  min-height: 300px;
 
   background-color: hsl(0, 0, 98);
 
@@ -14,8 +14,9 @@
 }
 
 .option__title {
-  margin: 0;
-  padding-top: 75px;
+  width: 245px;
+  margin: 0 auto;
+  padding-top: 85px;
 
   @include font(27px, 30px);
   font-family: $font-title;
@@ -28,10 +29,11 @@
 
 .option-list__link {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   min-height: 103px;
   min-width: 320px;
+  padding-top: 25px;
 
   position: relative;
 
@@ -40,6 +42,11 @@
   color: $color-white;
 
   background-color: $color-lightblue;
+
+  p {
+    margin: 0;
+    margin-right: 108px;
+  }
 }
 
 @media (min-width: $desktop-width) {
