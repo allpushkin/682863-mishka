@@ -1,4 +1,6 @@
 .top-title {
+  margin: 0;
+  margin-bottom: 30px;
   min-width: 320px;
   min-height: 177px;
 
@@ -8,4 +10,17 @@
   text-align: center;
 
   background-color: hsl(0, 0, 95%);
+}
+
+.top-title__catalog,
+.top-title__order {
+  margin-top: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .top-title__catalog,
+  .top-title__order {
+    @include font(53px, 57px);
+    padding-top: 50px;
+  }
 }

@@ -1,4 +1,10 @@
+.developed {
+  display: flex;
+  justify-content: space-around;
+}
+
 .developed__text {
+  @include list-reset();
   @include font(19px, 18px);
   font-family: $font-title;
   color: $color-title;

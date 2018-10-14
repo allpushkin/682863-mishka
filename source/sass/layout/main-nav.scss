@@ -1,15 +1,38 @@
+.main-nav__toggle {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--update {
+    display: none;
+  }
+}
+
+.main-nav__list-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-nav__item {
-  padding-left: 76px;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 1px solid black;
 
-  list-style: none;
+  text-align: center;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.main-nav__note-text {
+  display: none;
 }
 
 .main-nav__link {
@@ -18,19 +41,6 @@
   color: $color-title;
 
   position: relative;
-
-  &--search::before {
-    content: "";
-
-    position: absolute;
-    top: 5px;
-    right: 145px;
-
-    width: 18px;
-    height: 18px;
-
-    @include background ("../../img/icon-search.svg");
-  }
 
   &--basket::before {
     content: "";
@@ -43,5 +53,104 @@
     height: 18px;
 
     @include background ("../../img/icon-cart.svg");
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 180px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__item {
+    width: auto;
+    min-height: 88px;
+    padding: 0;
+    padding-top: 30px;
+    border-bottom: none;
+  }
+
+  .main-nav__list-wrapper {
+    justify-content: space-between;
+  }
+
+  .main-nav__item-search {
+    min-width: 88px;
+    border-right: 1px solid #ececec;
+    border-left: 1px solid #ececec;
+  }
+
+  .main-nav__note-text {
+    display: block;
+    margin-left: 90px;
+    border: none;
+  }
+
+  .main-nav__search-text {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &--user {
+      width: 400px;
+
+      &:first-child {
+        min-width: 80px;
+      }
+    }
+
+    &--navigation {
+      width: 370px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
+  .main-nav__list {
+    &--navigation {
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 400px;
+    }
+
+    &--update {
+      @include font(15px, 24px);
+      font-family: $font-title;
+      display: flex;
+      justify-content: space-between;
+      width: 350px;
+      margin-right: auto;
+
+      a {
+        color: $color-title;
+      }
+    }
+  }
+
+  .main-nav__list-wrapper {
+    width: 650px;
+    flex-direction: row-reverse;
+  }
+
+  .main-nav__item {
+    &--logo {
+      margin: 0;
+    }
   }
 }

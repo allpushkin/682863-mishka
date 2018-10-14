@@ -1,7 +1,8 @@
 .button {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   width: 260px;
+  height: 52px;
   border: 1px solid $color-text;
 
   @include font (17px, 40px);

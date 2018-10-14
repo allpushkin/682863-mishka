@@ -1,3 +1,9 @@
+.option {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
 .option__container-image {
   min-height: 283px;
 
@@ -8,57 +14,50 @@
 }
 
 .option__title {
+  margin: 0;
+  padding-top: 75px;
+
   @include font(27px, 30px);
   font-family: $font-title;
-
   text-align: center;
 }
 
 .option-list {
-  padding: 0;
-  margin: 0;
-}
-
-.option-list__item {
-  padding-left: 20px;
-  min-height: 103px;
-  min-width: 320px;
-
-  background-color: $color-lightblue;
-
-  list-style: none;
+  @include list-reset();
 }
 
 .option-list__link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 103px;
+  min-width: 320px;
+
   position: relative;
 
   @include font(19px, 24px);
   font-family: $font-title;
   color: $color-white;
 
-  &--accessories::after {
-    content: "";
+  background-color: $color-lightblue;
+}
 
-    position: absolute;
-    top: 15px;
-    left: 220px;
-
-    width: 60px;
-    height: 60px;
-
-    @include background("../../img/icon-interior.svg");
+@media (min-width: $desktop-width) {
+  .option__title {
+    @include font(53px, 57px);
+    width: 615px;
+    margin: auto;
   }
 
-  &--toys::after {
-    content: "";
+  .option__container-image {
+    min-height: 450px;
+  }
 
-    position: absolute;
-    top: 15px;
-    left: 220px;
+  .option-list {
+    display: flex;
+  }
 
-    width: 60px;
-    height: 60px;
-
-    @include background("../../img/icon-toy.svg");
+  .option-list__item {
+    width: 100%;
   }
 }
