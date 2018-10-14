@@ -26,22 +26,20 @@
   @include list-reset();
 }
 
-.option-list__item {
+.option-list__link {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 103px;
   min-width: 320px;
 
-  background-color: $color-lightblue;
-}
-
-.option-list__link {
   position: relative;
 
   @include font(19px, 24px);
   font-family: $font-title;
   color: $color-white;
+
+  background-color: $color-lightblue;
 }
 
 @media (min-width: $desktop-width) {
