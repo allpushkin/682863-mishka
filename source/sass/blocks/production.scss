@@ -55,26 +55,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .production {
+    margin-bottom: 63px;
+  }
+
   .production__wrapper {
     width: auto;
     display: flex;
     flex-direction: column;
+    padding: 0 50px;
+    padding-bottom: 45px;
   }
 
   .production__image-wrapper {
+    margin-bottom: 30px;
     order: -1;
   }
 
   .production__container-title {
     align-items: center;
     justify-content: flex-start;
-    padding-left: 30px;
+    padding-left: 43px;
   }
 
   .production__title {
     @include font(20px, 24px);
     width: auto;
-    margin-left: 20px;
+    margin-left: 33px;
   }
 
   .production__image {
@@ -85,6 +92,7 @@
   .production__text {
     @include font(15px, 30px);
     width: 585px;
+    margin-bottom: 37px;
   }
 
   .production__button-buy {

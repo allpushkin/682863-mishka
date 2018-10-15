@@ -17,6 +17,13 @@
   margin-top: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .top-title__catalog,
+  .top-title__order {
+    @include font(43px, 58px);
+  }
+}
+
 @media (min-width: $desktop-width) {
   .top-title__catalog,
   .top-title__order {
