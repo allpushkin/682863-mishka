@@ -43,7 +43,11 @@
     @include font(43px, 50px);
   }
 
-  .button-feedback {
+  .contacts__adds {
+    @include font(17px, 30px);
+  }
+
+  .contacts__feedback {
     width: 230px;
     border: 2px solid #444444;
   }
