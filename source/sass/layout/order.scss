@@ -1,40 +1,103 @@
+.order {
+  margin-bottom: 56px;
+}
+
 .order__wrapper {
-  width: 262px;
+  width: 266px;
   margin: 0 auto;
 }
 
 .order__text {
-  width: 242px;
+  width: 260px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   @include font(13px, 24px);
-}
-
-.order__form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  min-height: 1435px;
 }
 
 .order__form-field {
   position: relative;
 
+  padding: 0;
   border: none;
+
+  &--type {
+    margin-bottom: 31px;
+  }
+
+  &--color {
+    margin-bottom: 43px;
+  }
+
+  &--initials {
+    margin-bottom: 33px;
+  }
+
+  &--tel {
+    min-height: 74px;
+    margin-bottom: 33px;
+
+    border-bottom: 2px solid #444444;
+  }
+
+  &--email {
+    min-height: 74px;
+    margin-bottom: 33px;
+
+    border-bottom: 2px solid #444444;
+  }
+
+  &--text {
+    min-height: 298px;
+  }
 }
 
 .order__form-list {
   @include list-reset();
+
+  display: flex;
+  flex-direction: column;
+  min-height: 125px;
+  justify-content: space-around;
+
+  &--type {
+    min-height: 115px;
+    padding-top: 10px;
+    padding-left: 65px;
+  }
+
+  &--color {
+    justify-content: space-between;
+    min-height: 348px;
+    padding-top: 25px;
+    padding-left: 65px;
+  }
+
+  &--initials {
+    justify-content: space-between;
+    min-height: 272px;
+    padding-top: 19px;
+  }
 }
 
 .order__form-list-item {
-  @include font(19px, 18px);
+  @include font(17px, 18px);
   font-family: $font-title;
+
+  &--initials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70px;
+
+    border-bottom: 2px solid #444444;
+  }
 }
 
 .order__form-title {
   position: relative;
+
+  margin-bottom: 10px;
 
   @include font(17px, 16px);
   font-family: $font-title;
@@ -58,23 +121,35 @@
 }
 
 .order__form-input {
-  &--tel::after {
-    content: "";
+  @include font(17px, 18px);
+  font-family: $font-text;
+  color: rgba(68, 68, 68, 0.3);
 
-    position: absolute;
-    top: 0;
-    right: 0;
+  border: none;
 
-    width: 25px;
-    height: 25px;
+  &--initials {
+    min-height: 45px;
+  }
 
-    @include background("../../img/icon-phone.svg");
+  &--tel {
+    min-height: 38px;
+  }
+
+  &--mail {
+    min-height: 40px;
+  }
+
+  &--text {
+    margin-top: 10px;
+    border: 2px solid #444444;
+    resize: none;
   }
 }
 
 .order__explanation {
   @include font(14px, 16px);
   margin-top: -100px;
+  margin-bottom: 29px;
 }
 
 .order__button {
