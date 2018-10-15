@@ -104,6 +104,7 @@
   .review__wrapper {
     width: 1050px;
     padding: 0;
+    padding-left: 172px;
   }
 
   .review__title {
@@ -113,5 +114,14 @@
   .review__text {
     width: 768px;
     margin-right: 50px;
+    margin-bottom: 10px;
+  }
+
+  .review__comment-link {
+    padding: 15px 37px;
+  }
+
+  .review__comment-button {
+    margin-top: 9px;
   }
 }

@@ -9,18 +9,37 @@
 
 .contacts__title {
   @include font(18px, 30px);
-}
-
-.contacts__adds {
-  @include font(15px, 30px);
-  border-spacing: 0 30px;
-  td {
-    width: 75px;
-  }
+  margin-bottom: 23px;
 }
 
 .contacts__container-address {
-  margin-bottom: 30px;
+  margin-bottom: 37px;
+}
+
+.contacts__address-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 181px;
+}
+
+.contacts__addr {
+  @include list-reset();
+
+  @include font(15px, 30px);
+
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contacts__addr-item {
+  &:first-of-type {
+    margin-right: 33px;
+  }
+
+  &--address {
+    width: 145px;
+  }
 }
 
 .contacts__map {
@@ -41,10 +60,39 @@
 
   .contacts__title {
     @include font(43px, 50px);
+    margin-bottom: 48px;
   }
 
-  .contacts__adds {
+  .contacts__container-address {
+    margin-bottom: 57px;
+  }
+
+  .contacts__address-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: auto;
+  }
+
+  .contacts__addr {
     @include font(17px, 30px);
+
+    &--email {
+      margin-right: 52px;
+    }
+  }
+
+  .contacts__addr-item {
+    &:first-of-type {
+      margin-right: 26px;
+    }
+
+    &--address {
+      width: 225px;
+    }
+  }
+
+  .contacts__map {
+    margin-bottom: 52px;
   }
 
   .contacts__feedback {
@@ -54,32 +102,54 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 105px;
+  }
+
   .contacts__wrapper {
-    width: 1050px;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    width: 1250px;
+    padding: 0 100px;
+    padding-top: 64px;
+    padding-left: 270px;
+    justify-content: flex-start;
+  }
+
+  .contacts__title {
+    @include font(53px, 57px);
+    margin-bottom: 51px;
   }
 
   .contacts__container-address {
     display: flex;
     flex-direction: column;
-    margin-right: 50px;
+    min-height: 272px;
+    margin: 0;
   }
 
-  .contacts__adds {
-    td {
-      width: 220px;
+  .contacts__address-wrapper {
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .contacts__addr {
+    margin: 0;
+
+    &--email {
+      margin-bottom: 31px;
     }
   }
 
   .contacts__map {
     width: 525px;
-    height: 360px;
-    margin-top: -70px;
+    height: 353px;
+    margin-left: 45px;
   }
 
   .contacts__feedback {
     margin: 0;
+    margin-left: 5px;
   }
 }

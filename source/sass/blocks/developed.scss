@@ -11,3 +11,15 @@
   font-family: $font-title;
   color: $color-title;
 }
+
+@media (min-width: $desktop-width) {
+  .developed {
+    justify-content: space-between;
+    width: 185px;
+    margin: 0;
+  }
+
+  .developed__text {
+    padding-top: 10px;
+  }
+}

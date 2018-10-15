@@ -19,12 +19,15 @@
 @media (min-width: $tablet-width) {
   .footer-page__wrapper {
     flex-direction: row;
-    padding-top: 60px;
+    align-items: center;
+    padding-top: 70px;
+    padding-left: 54px;
   }
 
   .footer-page__logo {
     display: block;
     width: 180px;
+    margin-right: 60px;
   }
 
   .footer-page__social-list {
@@ -35,5 +38,18 @@
   .footer-page__developed {
     align-items: center;
     width: 180px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-page__wrapper {
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 1250px;
+    padding: 0 100px;
+  }
+
+  .footer-page__logo {
+    margin: 0;
   }
 }

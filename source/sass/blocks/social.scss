@@ -7,3 +7,18 @@
   margin: 0 auto;
   margin-bottom: 47px;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    justify-content: space-between;
+    width: 147px;
+    margin: 0;
+  }
+}

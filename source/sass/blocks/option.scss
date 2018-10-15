@@ -83,6 +83,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .option {
+    margin-bottom: 140px;
+  }
+
+  .option__wrapper {
+    padding: 0 100px;
+  }
+
   .option__title {
     @include font(53px, 57px);
     width: 615px;
@@ -90,11 +98,20 @@
   }
 
   .option__container-image {
-    min-height: 450px;
+    min-height: 535px;
   }
 
   .option__list {
     display: flex;
+  }
+
+  .option__list-link {
+    justify-content: space-around;
+    width: 100%;
+
+    p {
+      margin-right: 225px;
+    }
   }
 
   .option__list-item {

@@ -165,12 +165,14 @@
     width: auto;
     display: flex;
     flex-direction: column;
+    padding: 0 50px;
   }
 
   .order__text {
     @include font(17px, 30px);
     width: 615px;
-    margin-bottom: 60px;
+    margin: 0;
+    margin-bottom: 55px;
   }
 
   .order__form {
@@ -178,7 +180,17 @@
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 65px;
+    margin: 0;
+  }
+
+  .order__form-field {
+    &--type {
+      margin-bottom: 72px;
+    }
+  }
+
+  .order__form-label {
+    @include font(19px, 20px);
   }
 
   .order__color {

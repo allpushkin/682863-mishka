@@ -22,6 +22,10 @@
   .top-title__order {
     @include font(43px, 58px);
   }
+
+  .top-title {
+    min-height: 170px;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -11,3 +11,9 @@
     padding-left: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .logo {
+    padding: 30px 75px 0 0;
+  }
+}
