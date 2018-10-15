@@ -49,7 +49,7 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    margin-bottom: 160px;
+    margin-bottom: 165px;
   }
 
   .review__wrapper {
@@ -58,10 +58,12 @@
     flex-wrap: wrap;
     width: auto;
     padding: 0 50px;
+    padding-top: 80px;
   }
 
   .review__title {
     @include font(43px, 50px);
+    margin-bottom: 48px;
     order: -2;
   }
 
@@ -75,11 +77,16 @@
   .review__text {
     @include font(17px, 30px);
     width: 643px;
+    margin-bottom: 58px;
   }
 
   .review__author-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .review__author {
+    @include font(18px, 24px);
   }
 
   .review__comment-list {
@@ -88,6 +95,7 @@
   }
 
   .review__comment-link {
+    width: 100px;
     border: none;
   }
 }

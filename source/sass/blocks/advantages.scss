@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    margin-bottom: 82px;
+    margin-bottom: 70px;
   }
 
   .advantages__wrapper {
@@ -44,17 +44,24 @@
   }
 
   .advantages__title {
-    @include font(43px, 42px);
+    margin-bottom: 50px;
+
+    @include font(42px, 44px);
   }
 
   .advantages__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
+    min-height: auto;
+    height: 420px;
   }
 
   .advantages__list-item {
     width: 295px;
+
+    @include font(20px, 22px);
   }
 }
 
