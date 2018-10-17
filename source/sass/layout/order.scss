@@ -36,15 +36,11 @@
   &--tel {
     min-height: 74px;
     margin-bottom: 33px;
-
-    border-bottom: 2px solid #444444;
   }
 
   &--email {
     min-height: 74px;
     margin-bottom: 33px;
-
-    border-bottom: 2px solid #444444;
   }
 
   &--text {
@@ -63,34 +59,37 @@
   &--type {
     min-height: 115px;
     padding-top: 10px;
-    padding-left: 65px;
   }
 
   &--color {
     justify-content: space-between;
     min-height: 348px;
     padding-top: 25px;
-    padding-left: 65px;
   }
 
   &--initials {
     justify-content: space-between;
     min-height: 272px;
     padding-top: 19px;
+    padding-left: 28px;
   }
 }
 
 .order__form-list-item {
   @include font(17px, 18px);
   font-family: $font-title;
+  position: relative;
+
+  &--type,
+  &--color {
+    padding-left: 91px;
+  }
 
   &--initials {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 70px;
-
-    border-bottom: 2px solid #444444;
   }
 }
 
@@ -98,6 +97,7 @@
   position: relative;
 
   margin-bottom: 10px;
+  padding-left: 28px;
 
   @include font(17px, 16px);
   font-family: $font-title;
@@ -109,7 +109,7 @@
 
     position: absolute;
     top: 6px;
-    left: 62px;
+    left: 90px;
     width: 198px;
     height: 0;
     border: 1px solid $color-lightblue;
@@ -118,6 +118,12 @@
 
 .order__form-label {
   display: block;
+
+  cursor: pointer;
+
+  &--type {
+    width: 165px;
+  }
 }
 
 .order__form-input {
@@ -125,18 +131,77 @@
   font-family: $font-text;
   color: rgba(68, 68, 68, 0.3);
 
+  width: 260px;
+
   border: none;
+
+  &--radio~label::before {
+    content: "";
+
+    position: absolute;
+    top: -9px;
+    left: 27px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid #444444;
+    border-radius: 50%;
+  }
+
+  &--radio:checked~label::after {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    left: 39px;
+
+    width: 16px;
+    height: 16px;
+
+    border: 8px solid $color-lightblue;
+    border-radius: 50%;
+  }
+
+  &--checkbox~label::before {
+    content: "";
+
+    position: absolute;
+    top: -11px;
+    left: 28px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid #444444;
+  }
+
+  &--checkbox:checked~label::after {
+    content: "";
+
+    position: absolute;
+    top: -4px;
+    left: 32px;
+
+    width: 35px;
+    height: 24px;
+
+    @include background("../../img/icon-tick.svg");
+  }
 
   &--initials {
     min-height: 45px;
+    border-bottom: 2px solid #444444;
   }
 
   &--tel {
     min-height: 38px;
+    border-bottom: 2px solid #444444;
   }
 
   &--mail {
     min-height: 40px;
+    border-bottom: 2px solid #444444;
   }
 
   &--text {
