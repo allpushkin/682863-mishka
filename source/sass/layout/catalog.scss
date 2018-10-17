@@ -127,8 +127,17 @@
   }
 
   .catalog__container-description {
+    min-height: 199px;
     padding: 0;
     padding-left: 27px;
+  }
+
+  .catalog__description-wrapper {
+    &--basket{
+      min-height: 83px;
+      padding-top: 0;
+      margin-top: 28px;
+    }
   }
 
   .catalog__item-title {
@@ -140,8 +149,15 @@
     height: 460px;
   }
 
+  .catalog__item-price {
+    &::after {
+      right: 32px;
+    }
+  }
+
   .catalog__item {
     flex-direction: column;
+    min-height: 660px;
     min-width: 316px;
   }
 }

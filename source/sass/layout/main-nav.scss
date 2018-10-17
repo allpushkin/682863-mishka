@@ -156,10 +156,9 @@
 
   .main-nav__list {
     &--navigation {
-      flex-direction: row-reverse;
       align-items: flex-start;
       justify-content: space-between;
-      width: 368px;
+      width: 375px;
       padding: 0;
     }
 
@@ -168,8 +167,7 @@
       font-family: $font-title;
       display: flex;
       justify-content: space-between;
-      width: 315px;
-      margin-right: auto;
+      width: 379px;
 
       a {
         color: $color-title;
@@ -189,19 +187,26 @@
 
   .main-nav__item {
     &--navigation {
+      width: 156px;
       padding-top: 32px;
     }
 
     &--update {
+      width: 158px;
       padding-top: 18px;
     }
 
     &--basket {
+      width: 185px;
       padding-right: 3px;
     }
   }
 
   .main-nav__link {
     @include font(17px, 24px);
+
+    &--basket::before {
+      right: 210px;
+    }
   }
 }

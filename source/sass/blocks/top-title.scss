@@ -26,12 +26,23 @@
   .top-title {
     min-height: 170px;
   }
+
+  .top-title__wrapper {
+    &--catalog {
+      margin-bottom: 43px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .top-title__catalog,
   .top-title__order {
     @include font(53px, 57px);
-    padding-top: 50px;
+  }
+
+  .top-title__wrapper {
+    &--catalog {
+      margin-bottom: 120px;
+    }
   }
 }
