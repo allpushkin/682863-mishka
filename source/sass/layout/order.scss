@@ -574,3 +574,16 @@
     margin-right: 225px;
   }
 }
+
+.order__form-title {
+  left: 81px;
+
+  &--tel {
+    left: 112px;
+  }
+
+  &--mail {
+    top: 30px;
+    left: 110px;
+  }
+}
