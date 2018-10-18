@@ -114,6 +114,27 @@
     height: 0;
     border: 1px solid $color-lightblue;
   }
+
+  &--tel {
+    padding-left: 0;
+
+    &::after {
+      left: 62px;
+    }
+  }
+
+  &--mail {
+    padding-left: 0;
+
+    &::after {
+      left: 80px;
+      width: 180px;
+    }
+  }
+}
+
+.order__communication-wrapper {
+  padding-left: 28px;
 }
 
 .order__form-label {
@@ -206,6 +227,7 @@
 
   &--text {
     margin-top: 10px;
+    margin-left: 28px;
     border: 2px solid #444444;
     resize: none;
   }
@@ -215,6 +237,7 @@
   @include font(14px, 16px);
   margin-top: -100px;
   margin-bottom: 29px;
+  margin-left: 30px;
 }
 
 .order__button {
@@ -226,6 +249,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .order {
+    margin-bottom: 35px;
+  }
+
   .order__text-wrapper {
     width: auto;
     padding: 0 50px;
@@ -235,7 +262,7 @@
     @include font(17px, 30px);
     width: 615px;
     margin: 0;
-    margin-bottom: 52px;
+    margin-bottom: 18px;
   }
 
   .order__form {
@@ -249,16 +276,21 @@
   .order__form-field {
     border-bottom: none;
 
+    &--type {
+      padding-top: 10px;
+    }
+
     &--color {
       min-height: 313px;
-      padding-top: 52px;
+      padding-top: 55px;
+      margin-bottom: 36px;
       background-color: #f1f1f1;
     }
 
     &--tel {
       min-height: 114px;
       margin: 0;
-      padding-top: 39px;
+      padding-top: 36px;
       background-color: #f1f1f1;
     }
 
@@ -275,18 +307,23 @@
 
     &--text {
       min-height: 195px;
+      margin-bottom: 23px;
     }
   }
 
   .order__communication-wrapper {
     min-height: 227px;
-    padding-top: 21px;
-    margin-bottom: 48px;
+    padding: 0;
+    margin-bottom: 24px;
     background-color: #f1f1f1;
   }
 
   .order__form-label {
     @include font(19px, 20px);
+
+    &--type {
+      width: 100%;
+    }
   }
 
   .order__color {
@@ -301,17 +338,16 @@
 
     &--color {
       flex-direction: row;
-      min-height: 258px;
-      width: 396px;
+      min-height: 235px;
+      width: 400px;
       margin: 0 auto;
-      margin-right: 74px;
-      padding-top: 30px;
+      margin-right: 162px;
     }
 
     &--type {
       justify-content: space-around;
       min-height: 151px;
-      width: 308px;
+      width: 400px;
       margin: 0 auto;
       margin-right: 163px;
       padding: 0;
@@ -319,11 +355,10 @@
 
     &--initials {
       justify-content: space-between;
-      min-height: 240px;
+      min-height: 223px;
       width: 500px;
       margin: 0 auto;
       margin-right: 50px;
-      padding-top: 18px;
     }
   }
 
@@ -345,6 +380,37 @@
 
   .order__form-input {
     @include font(19px, 18px);
+
+    &--radio~label::before {
+      top: -16px;
+      left: 11px;
+
+      width: 53px;
+      height: 53px;
+    }
+
+    &--radio:checked~label::after {
+      top: 0;
+      left: 27px;
+
+      width: 22px;
+      height: 22px;
+
+      border: 11px solid $color-lightblue;
+    }
+
+    &--checkbox~label::before {
+      top: -15px;
+      left: 9px;
+
+      width: 54px;
+      height: 52px;
+    }
+
+    &--checkbox:checked~label::after {
+      top: 2px;
+      left: 21px;
+    }
 
     &--tel,
     &--mail,
@@ -384,10 +450,40 @@
   }
 
   .order__form-title {
-    margin-bottom: -24px;
+    margin-bottom: 0;
 
     &::after {
       content: none;
+    }
+
+    &--type {
+      top: 56px;
+      left: 23px;
+    }
+
+    &--color {
+      top: 76px;
+      left: 23px;
+    }
+
+    &--initials {
+      top: 31px;
+      left: 25px;
+    }
+
+    &--tel {
+      top: 66px;
+      left: 53px;
+    }
+
+    &--email {
+      top: 28px;
+      left: 54px;
+    }
+
+    &--text {
+      top: 43px;
+      left: 24px;
     }
   }
 
@@ -411,6 +507,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order {
+    margin-bottom: 56px;
+  }
+
   .order__wrapper {
     width: 1150px;
     padding: 0 114px;
@@ -418,5 +518,59 @@
 
   .order__text {
     width: 672px;
+    margin-left: 225px;
+  }
+
+  .order__form {
+    padding: 0 50px;
+  }
+
+  .order__form-field {
+    &--color {
+      min-height: 237px;
+    }
+
+    &--text {
+      margin-bottom: 16px;
+    }
+  }
+
+  .order__form-list {
+    margin-left: 212px;
+
+    &--color {
+      min-height: 155px;
+      width: 720px;
+    }
+
+    &--initials {
+      margin-left: 225px;
+    }
+  }
+
+  .order__form-list-item {
+    &--color {
+      width: 193px;
+    }
+  }
+
+  .order__form-input {
+    &--tel,
+    &--mail {
+      margin-left: 225px;
+    }
+
+    &--text {
+      width: 704px;
+      margin-left: 220px;
+    }
+  }
+
+  .order__form-container-text {
+    padding-left: 175px;
+  }
+
+  .order__explanation {
+    margin-right: 225px;
   }
 }

@@ -24,12 +24,16 @@
   }
 
   .top-title {
-    min-height: 170px;
+    min-height: 135px;
   }
 
   .top-title__wrapper {
     &--catalog {
       margin-bottom: 43px;
+    }
+
+    &--order {
+      margin-bottom: 71px;
     }
   }
 }
@@ -40,9 +44,13 @@
     @include font(53px, 57px);
   }
 
+  .top-title {
+    min-height: 160px;
+  }
+
   .top-title__wrapper {
-    &--catalog {
-      margin-bottom: 120px;
+    &--order {
+      margin-bottom: 124px;
     }
   }
 }
