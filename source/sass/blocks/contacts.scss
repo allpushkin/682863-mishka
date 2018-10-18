@@ -26,10 +26,10 @@
 .contacts__addr {
   @include list-reset();
 
-  @include font(15px, 30px);
-
   display: flex;
   justify-content: flex-start;
+
+  @include font(15px, 30px);
 }
 
 .contacts__addr-item {

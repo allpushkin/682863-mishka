@@ -53,7 +53,7 @@
   .advantages__list-wrapper {
     display: flex;
     justify-content: space-between;
-    width:  631px;
+    width: 631px;
   }
 
   .advantages__list {
@@ -61,7 +61,6 @@
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: auto;
     min-height: 417px;
     padding-bottom: 8px;
     margin: 0;
@@ -101,9 +100,4 @@
   .advantages__list-wrapper {
     width: 650px;
   }
-
-  .advantages__list {
-
-  }
-
 }
