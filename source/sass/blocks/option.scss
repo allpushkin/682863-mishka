@@ -29,13 +29,10 @@
 
 .option__list-link {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
   min-height: 103px;
   min-width: 320px;
-  padding-top: 25px;
-
-  position: relative;
+  padding-top: 21px;
+  padding-left: 28px;
 
   @include font(19px, 24px);
   font-family: $font-title;
@@ -45,7 +42,7 @@
 
   p {
     margin: 0;
-    margin-right: 108px;
+    margin-right: 113px;
   }
 }
 

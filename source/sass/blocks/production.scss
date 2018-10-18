@@ -12,9 +12,9 @@
 
 .production__container-title {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 26px;
+  padding-left: 33px;
 }
 
 .production__title-icon {
@@ -23,7 +23,7 @@
 
 .production__title {
   width: 130px;
-  margin-left: 20px;
+  margin-left: 25px;
 
   @include font(17px, 24px);
 }
@@ -43,7 +43,7 @@
 }
 
 .production__text {
-  width: 185px;
+  width: 189px;
   margin: 0 auto;
   margin-bottom: 25px;
 

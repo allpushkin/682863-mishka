@@ -17,6 +17,12 @@
   margin-top: 0;
 }
 
+.top-title__wrapper {
+  &--catalog {
+    margin-bottom: 31px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .top-title__catalog,
   .top-title__order {

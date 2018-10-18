@@ -15,7 +15,6 @@
   @include list-reset();
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 345px;
   margin-bottom: 27px;
 }
@@ -23,14 +22,62 @@
 .advantages__list-item {
   @include font(17px, 20px);
   font-family: $font-title;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &--flower {
+    width: 180px;
+    min-height: 95px;
+    margin-bottom: 30px;
+  }
+
+  &--money {
+    width: 206px;
+    min-height: 93px;
+    margin-bottom: 35px;
+  }
+
+  &--heart {
+    width: 190px;
+    min-height: 88px;
+  }
+
+  &--yarn {
+    width: 220px;
+    min-height: 93px;
+    margin-bottom: 34px;
+  }
+
+  &--rocket {
+    min-height: 88px;
+    margin-bottom: 31px;
+  }
+
+  &--gift {
+    width: 205px;
+    min-height: 92px;
+  }
 }
 
 .advantages__icon {
-  display: block;
-  margin-bottom: 20px;
-
   path {
     fill: $color-lightblue;
+  }
+
+  &--flower {
+    margin-left: 11px;
+  }
+
+  &--heart {
+    margin-left: 10px;
+  }
+
+  &--yarn,
+  &--gift {
+    margin-left: 5px;
   }
 }
 

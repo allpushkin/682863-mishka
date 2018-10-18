@@ -2,15 +2,3 @@
   width: 320px;
   margin: 0 auto;
 }
-
-@media (min-width: $tablet-width) {
-  .body-page {
-    min-width: 772px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .body-page {
-    min-width: 1250px;
-  }
-}

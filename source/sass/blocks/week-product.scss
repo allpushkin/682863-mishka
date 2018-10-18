@@ -1,5 +1,5 @@
 .week-product {
-  margin-bottom: 67px;
+  margin-bottom: 69px;
 }
 
 .week-product__wrapper {
@@ -12,7 +12,7 @@
 }
 
 .week-product__subtitle {
-  line-height: 0.05em;
+  @include font(18px, 19px);
   color: $color-lightblue;
   text-transform: uppercase;
 }
@@ -20,6 +20,7 @@
 .week-product__description {
   padding-top: 23px;
   padding-bottom: 11px;
+  letter-spacing: 0.01em;
 }
 
 .week-product__features {
@@ -35,8 +36,9 @@
 }
 
 .week-product__price {
+  @include font(18px, 19px);
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   text-align: center;
 }
