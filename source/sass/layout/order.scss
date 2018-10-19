@@ -1,4 +1,6 @@
 .order {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 56px;
 }
 
@@ -257,7 +259,9 @@
 
 @media (min-width: $tablet-width) {
   .order {
-    margin-bottom: 35px;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 47px;
   }
 
   .order__text-wrapper {
@@ -297,7 +301,7 @@
     &--tel {
       min-height: 114px;
       margin: 0;
-      padding-top: 36px;
+      padding-top: 25px;
       background-color: #f1f1f1;
     }
 
@@ -308,20 +312,20 @@
     &--email {
       min-height: 90px;
       margin: 0;
-      padding-top: 7px;
+      padding-bottom: 7px;
       background-color: #f1f1f1;
     }
 
     &--text {
       min-height: 195px;
-      margin-bottom: 23px;
+      margin-bottom: 28px;
     }
   }
 
   .order__communication-wrapper {
     min-height: 227px;
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: 17px;
     background-color: #f1f1f1;
   }
 
@@ -346,7 +350,7 @@
     &--color {
       flex-direction: row;
       min-height: 235px;
-      width: 400px;
+      width: 397px;
       margin: 0 auto;
       margin-right: 162px;
     }
@@ -354,7 +358,7 @@
     &--type {
       justify-content: space-around;
       min-height: 151px;
-      width: 400px;
+      width: 397px;
       margin: 0 auto;
       margin-right: 163px;
       padding: 0;
@@ -446,6 +450,7 @@
 
     &--mail {
       padding-bottom: 10px;
+      margin-top: 0;
     }
 
     &--text {
@@ -475,28 +480,30 @@
 
     &--initials {
       top: 31px;
-      left: 25px;
+      left: 21px;
+      margin-bottom: 5px;
     }
 
     &--tel {
-      top: 66px;
-      left: 53px;
+      top: 64px;
+      left: 52px;
     }
 
-    &--email {
-      top: 28px;
-      left: 54px;
+    &--mail {
+      top: 25px;
+      left: 52px;
     }
 
     &--text {
-      top: 43px;
-      left: 24px;
+      top: 46px;
+      left: 22px;
     }
   }
 
   .order__explanation {
     margin: 0;
-    margin-right: 54px;
+    margin-right: 49px;
+    padding-bottom: 5px;
 
     @include font(17px, 30px);
   }
@@ -509,7 +516,10 @@
 
   .order__button {
     width: 230px;
-    margin-left: 52px;
+    margin-left: 48px;
+    padding-top: 0;
+    line-height: 19px;
+    letter-spacing: 0.05em;
   }
 }
 

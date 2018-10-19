@@ -20,8 +20,10 @@
   .footer-page__wrapper {
     flex-direction: row;
     align-items: center;
-    padding-top: 70px;
-    padding-left: 54px;
+    width: 768px;
+    margin: 0 auto;
+    padding-top: 54px;
+    padding-left: 51px;
   }
 
   .footer-page__logo {

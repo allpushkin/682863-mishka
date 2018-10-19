@@ -51,12 +51,15 @@
 
 @media (min-width: $tablet-width) {
   .review {
-    margin-bottom: 165px;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 162px;
   }
 
   .review__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: auto;
     padding: 0 50px;
@@ -72,12 +75,14 @@
   .review__comment-button {
     width: 175px;
     margin: 0;
+    margin-top: 3px;
     border: 2px solid #444444;
     order: -1;
   }
 
   .review__text {
     @include font(17px, 30px);
+    letter-spacing: 0;
     width: 643px;
     margin-bottom: 58px;
   }
@@ -85,6 +90,8 @@
   .review__author-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 59px;
   }
 
   .review__author {
@@ -97,7 +104,8 @@
   }
 
   .review__comment-link {
-    width: 100px;
+    width: 90px;
+    padding: 16px 23px;
     border: none;
   }
 }

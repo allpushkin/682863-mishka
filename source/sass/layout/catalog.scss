@@ -75,7 +75,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
-    width: auto;
+    width: 768px;
     padding: 0 50px;
   }
 
@@ -99,6 +99,11 @@
 
   .catalog__description-wrapper {
     min-height: 87px;
+
+    &--basket {
+      min-height: 107px;
+      padding-top: 25px;
+    }
   }
 
   .catalog__item-text {
@@ -107,15 +112,20 @@
 
   .catalog__item-price {
     padding-bottom: 27px;
+    padding-left: 5px;
 
     @include font(17px, 24px);
+
+    &::after {
+      left: 257px;
+    }
   }
 
   .catalog__container-description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 30px;
+    padding-left: 25px;
   }
 }
 

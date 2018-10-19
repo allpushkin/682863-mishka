@@ -25,6 +25,9 @@
 
 .option__list {
   @include list-reset();
+
+  width: 320px;
+  margin: 0 auto;
 }
 
 .option__list-link {
@@ -69,11 +72,14 @@
 
   .option__list {
     display: flex;
+    width: 768px;
+    padding: 0 50px;
   }
 
   .option__list-link {
     width: 335px;
-    padding-top: 30px;
+    padding-top: 27px;
+    padding-left: 34px;
 
     @include font(20px, 30px);
   }

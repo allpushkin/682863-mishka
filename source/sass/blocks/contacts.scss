@@ -53,6 +53,12 @@
 
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+  }
+
   .contacts__wrapper {
     width: auto;
     padding: 0 50px;
@@ -83,7 +89,7 @@
 
   .contacts__addr-item {
     &:first-of-type {
-      margin-right: 26px;
+      margin-right: 24px;
     }
 
     &--address {

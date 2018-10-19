@@ -56,11 +56,11 @@
 
 @media (min-width: $tablet-width) {
   .production {
-    margin-bottom: 45px;
+    margin-bottom: 63px;
   }
 
   .production__wrapper {
-    width: auto;
+    width: 768px;
     display: flex;
     flex-direction: column;
     padding: 0 50px;
@@ -92,7 +92,7 @@
   .production__text {
     @include font(15px, 30px);
     width: 585px;
-    margin-bottom: 17px;
+    margin-bottom: 35px;
   }
 
   .production__button-buy {

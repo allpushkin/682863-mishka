@@ -83,6 +83,8 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
+    width: 768px;
+    margin: 0 auto;
     margin-bottom: 70px;
   }
 
@@ -121,10 +123,19 @@
     width: 295px;
 
     @include font(20px, 22px);
-  }
+    letter-spacing: 0;
 
-  .advantages__icon {
-    margin: 0;
+    &--flower {
+      width: 215px;
+    }
+
+    &--money {
+      width: 245px;
+    }
+
+    &--heart {
+      width: 235px;
+    }
   }
 }
 

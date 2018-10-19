@@ -20,7 +20,6 @@
 .week-product__description {
   padding-top: 23px;
   padding-bottom: 11px;
-  letter-spacing: 0.01em;
 }
 
 .week-product__features {
@@ -45,7 +44,9 @@
 
 @media (min-width: $tablet-width) {
   .week-product {
-    margin-bottom: 123px;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 119px;
   }
 
   .week-product__wrapper {
@@ -79,8 +80,10 @@
 
   .week-product__subtitle {
     width: 77px;
+    padding-top: 5px;
 
     @include font(17px, 19px);
+    letter-spacing: 0.05em;
     text-align: center;
   }
 
