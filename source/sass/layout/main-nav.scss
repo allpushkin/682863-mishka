@@ -113,7 +113,7 @@
   }
 
   .main-nav__item-search {
-    min-width: 88px;
+    min-width: 84px;
     padding-top: 36px;
     border-right: 1px solid #ececec;
     border-left: 1px solid #ececec;
@@ -155,8 +155,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
-    width: auto;
-    padding: 0 100px;
+    width: 1150px;
+    padding: 0 50px;
   }
 
   .main-nav__list-wrapper {

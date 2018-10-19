@@ -141,11 +141,11 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
+    width: 1150px;
     margin-bottom: 151px;
   }
 
   .advantages__wrapper {
-    width: 1150px;
     margin: 0 auto;
     padding: 0 220px;
   }
@@ -158,4 +158,11 @@
   .advantages__list-wrapper {
     width: 650px;
   }
+
+  .advantages__list {
+    &--first {
+      padding-left: 6px;
+    }
+  }
+
 }

@@ -106,18 +106,18 @@
 
   .option__list {
     display: flex;
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .option__list-link {
     justify-content: space-around;
-    width: 100%;
+    width: 525px;
+    padding-left: 0;
 
     p {
       margin-right: 225px;
     }
-  }
-
-  .option__list-item {
-    width: 100%;
   }
 }

@@ -111,10 +111,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .review {
+    width: 1150px;
+  }
+
   .review__wrapper {
-    width: 1050px;
-    padding: 0;
-    padding-left: 172px;
+    padding: 0 50px;
+    padding-left: 223px;
   }
 
   .review__title {
@@ -122,13 +125,13 @@
   }
 
   .review__text {
-    width: 768px;
+    width: 770px;
     margin-right: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 39px;
   }
 
-  .review__comment-link {
-    padding: 15px 37px;
+  .review__author {
+    letter-spacing: -0.02em
   }
 
   .review__comment-button {

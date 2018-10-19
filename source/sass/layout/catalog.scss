@@ -130,9 +130,13 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog__wrapper {
+  .catalog {
     width: 1150px;
-    padding: 0 50px;
+    margin: 0 auto;
+  }
+
+  .catalog__wrapper {
+    width: auto;
   }
 
   .catalog__list {
@@ -144,14 +148,16 @@
   .catalog__container-description {
     min-height: 199px;
     padding: 0;
-    padding-left: 27px;
+    padding-left: 25px;
   }
 
   .catalog__description-wrapper {
+    min-height: 84px;
+
     &--basket {
-      min-height: 83px;
+      min-height: 81px;
       padding-top: 0;
-      margin-top: 28px;
+      margin-top: 26px;
     }
   }
 
@@ -165,8 +171,10 @@
   }
 
   .catalog__item-price {
+    padding-left: 0;
+
     &::after {
-      right: 32px;
+      left: 237px;
     }
   }
 

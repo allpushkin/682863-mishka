@@ -525,21 +525,17 @@
 
 @media (min-width: $desktop-width) {
   .order {
+    width: 1150px;
     margin-bottom: 56px;
   }
 
   .order__wrapper {
-    width: 1150px;
     padding: 0 114px;
   }
 
   .order__text {
     width: 672px;
-    margin-left: 225px;
-  }
-
-  .order__form {
-    padding: 0 50px;
+    margin-left: 176px;
   }
 
   .order__form-field {
@@ -548,7 +544,7 @@
     }
 
     &--text {
-      margin-bottom: 16px;
+      margin-bottom: 23px;
     }
   }
 
@@ -561,6 +557,7 @@
     }
 
     &--initials {
+      width: 698px;
       margin-left: 225px;
     }
   }
@@ -574,12 +571,13 @@
   .order__form-input {
     &--tel,
     &--mail {
+      width: 700px;
       margin-left: 225px;
     }
 
     &--text {
       width: 704px;
-      margin-left: 220px;
+      margin-left: 223px;
     }
   }
 
@@ -599,7 +597,7 @@
     }
 
     &--mail {
-      top: 30px;
+      top: 25px;
       left: 110px;
     }
   }

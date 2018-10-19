@@ -109,18 +109,18 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    width: 1150px;
     margin-bottom: 105px;
   }
 
   .contacts__wrapper {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
-    width: 1250px;
-    padding: 0 100px;
+    padding: 0;
     padding-top: 64px;
-    padding-left: 270px;
-    justify-content: flex-start;
+    padding-left: 219px;
   }
 
   .contacts__title {
