@@ -44,7 +44,7 @@
 
 .contacts__map {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 41px;
 
   img {
     width: 100%;
@@ -109,18 +109,18 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    display: flex;
+    flex-wrap: wrap;
     width: 1150px;
+    padding-top: 62px;
     margin-bottom: 105px;
   }
 
   .contacts__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: center;
+    display: block;
     padding: 0;
-    padding-top: 64px;
-    padding-left: 219px;
+    padding-top: 70px;
+    padding-left: 117px;
   }
 
   .contacts__title {
@@ -150,12 +150,13 @@
 
   .contacts__map {
     width: 525px;
-    height: 353px;
-    margin-left: 45px;
+    height: 457px;
+    margin-bottom: 0;
   }
 
   .contacts__feedback {
     margin: 0;
-    margin-left: 5px;
+    margin-left: 224px;
+    margin-top: -50px;
   }
 }
