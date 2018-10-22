@@ -1336,6 +1336,7 @@ a {
   .option {
     margin-bottom: 140px; }
   .option__wrapper {
+    margin: 0 auto;
     padding: 0 50px; }
   .option__title {
     font-size: 53px;
