@@ -1,19 +1,20 @@
 .production {
-  margin-bottom: 50px;
+  margin-bottom: 58px;
 }
 
 .production__wrapper {
   width: 260px;
   margin: 0 auto;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 33px;
   border: 1px solid #ececec;
 }
 
 .production__container-title {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 26px;
+  align-items: center;
+  margin-bottom: 27px;
+  padding-left: 33px;
 }
 
 .production__title-icon {
@@ -22,6 +23,7 @@
 
 .production__title {
   width: 130px;
+  margin-left: 25px;
 
   @include font(17px, 24px);
 }
@@ -29,7 +31,7 @@
 .production__image-wrapper {
   position: relative;
 
-  padding-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .production__image-play {
@@ -41,9 +43,9 @@
 }
 
 .production__text {
-  width: 185px;
+  width: 189px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  margin-bottom: 25px;
 
   @include font(13px, 24px);
 }
@@ -53,26 +55,33 @@
 }
 
 @media (min-width: $tablet-width) {
+  .production {
+    margin-bottom: 63px;
+  }
+
   .production__wrapper {
-    width: auto;
+    width: 768px;
     display: flex;
     flex-direction: column;
+    padding: 0 50px;
+    padding-bottom: 45px;
   }
 
   .production__image-wrapper {
+    margin-bottom: 30px;
     order: -1;
   }
 
   .production__container-title {
     align-items: center;
     justify-content: flex-start;
-    padding-left: 30px;
+    padding-left: 43px;
   }
 
   .production__title {
     @include font(20px, 24px);
     width: auto;
-    margin-left: 20px;
+    margin-left: 33px;
   }
 
   .production__image {
@@ -83,6 +92,7 @@
   .production__text {
     @include font(15px, 30px);
     width: 585px;
+    margin-bottom: 35px;
   }
 
   .production__button-buy {
@@ -92,19 +102,33 @@
 }
 
 @media (min-width: $desktop-width) {
+  .production {
+    margin-bottom: 110px;
+  }
+
   .production__wrapper {
     width: 1050px;
     min-height: 455px;
     padding: 0;
+    padding-right: 57px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .production__container-title {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 75px;
     width: 300px;
-    min-height: 100px;
-    padding: 0;
+    margin: 0;
+    padding-top: 30px;
+    padding-left: 68px;
+  }
+
+  .production__title {
+    width: 150px;
     margin: 0;
   }
 
@@ -121,11 +145,14 @@
   }
 
   .production__container-text {
+    min-height: 242px;
     margin-left: auto;
+    padding-top: 15px;
   }
 
   .production__text {
     width: 230px;
+    margin-bottom: 45px;
   }
 
   .production__button-buy {

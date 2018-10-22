@@ -1,11 +1,12 @@
 .option {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  background-color: #fafafa;
 }
 
 .option__container-image {
-  min-height: 283px;
+  min-height: 300px;
 
   background-color: hsl(0, 0, 98);
 
@@ -14,35 +15,82 @@
 }
 
 .option__title {
-  margin: 0;
-  padding-top: 75px;
+  width: 245px;
+  margin: 0 auto;
+  padding-top: 85px;
 
   @include font(27px, 30px);
   font-family: $font-title;
   text-align: center;
 }
 
-.option-list {
+.option__list {
   @include list-reset();
+
+  width: 320px;
+  margin: 0 auto;
 }
 
-.option-list__link {
+.option__list-link {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   min-height: 103px;
   min-width: 320px;
-
-  position: relative;
+  padding-top: 21px;
+  padding-left: 28px;
 
   @include font(19px, 24px);
   font-family: $font-title;
   color: $color-white;
 
   background-color: $color-lightblue;
+
+  p {
+    margin: 0;
+    margin-right: 113px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .option {
+    margin-bottom: 65px;
+  }
+
+  .option__title {
+    width: 500px;
+    padding-top: 63px;
+
+    @include font(43px, 50px);
+  }
+
+  .option__container-image {
+    min-height: 535px;
+  }
+
+  .option__list {
+    display: flex;
+    width: 768px;
+    padding: 0 50px;
+  }
+
+  .option__list-link {
+    width: 335px;
+    padding-top: 27px;
+    padding-left: 34px;
+
+    @include font(20px, 30px);
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .option {
+    margin-bottom: 140px;
+  }
+
+  .option__wrapper {
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
   .option__title {
     @include font(53px, 57px);
     width: 615px;
@@ -50,14 +98,26 @@
   }
 
   .option__container-image {
-    min-height: 450px;
+    min-height: 535px;
   }
 
-  .option-list {
+  .option__list {
     display: flex;
+    width: 100%;
+    padding: 0;
   }
 
-  .option-list__item {
+  .option__list-item {
+    width: 525px;
+  }
+
+  .option__list-link {
+    justify-content: space-around;
     width: 100%;
+    padding-left: 0;
+
+    p {
+      margin-right: 225px;
+    }
   }
 }

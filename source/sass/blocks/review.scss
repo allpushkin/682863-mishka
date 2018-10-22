@@ -1,5 +1,5 @@
 .review {
-  margin-bottom: 92px;
+  margin-bottom: 87px;
 }
 
 .review__wrapper {
@@ -8,18 +8,20 @@
 }
 
 .review__title {
-  margin-bottom: 38px;
+  margin-bottom: 21px;
 }
 
 .review__text {
-  margin-bottom: 38px;
+  margin-bottom: 28px;
 
   @include font(15px, 30px);
+  letter-spacing: 0.01em;
 }
 
 .review__author {
   @include font(17px, 24px);
   font-family: $font-title;
+  letter-spacing: 0.01em;
   color: $color-title;
 }
 
@@ -28,54 +30,72 @@
   font-style: normal;
 }
 
+.review__author-container {
+  margin-bottom: 30px;
+}
+
 .review__comment-list {
   @include list-reset();
 
   display: flex;
-  justify-content: space-between;
-  padding-top: 36px;
-  margin-bottom: 38px;
+  justify-content: center;
+  margin-bottom: 33px;
 }
 
 .review__comment-link {
   display: block;
-  padding: 13px 42px;
+  width: 130px;
+  padding: 13px 37px;
   border: 1px solid gray;
 }
 
 @media (min-width: $tablet-width) {
   .review {
-    margin-bottom: 160px;
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 162px;
   }
 
   .review__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
     width: auto;
     padding: 0 50px;
+    padding-top: 80px;
   }
 
   .review__title {
     @include font(43px, 50px);
+    margin-bottom: 48px;
     order: -2;
   }
 
   .review__comment-button {
     width: 175px;
     margin: 0;
+    margin-top: 3px;
     border: 2px solid #444444;
     order: -1;
   }
 
   .review__text {
     @include font(17px, 30px);
+    letter-spacing: 0;
     width: 643px;
+    margin-bottom: 58px;
   }
 
   .review__author-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 59px;
+  }
+
+  .review__author {
+    @include font(18px, 24px);
   }
 
   .review__comment-list {
@@ -84,14 +104,20 @@
   }
 
   .review__comment-link {
+    width: 90px;
+    padding: 16px 23px;
     border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .review {
+    width: 1150px;
+  }
+
   .review__wrapper {
-    width: 1050px;
-    padding: 0;
+    padding: 0 50px;
+    padding-left: 223px;
   }
 
   .review__title {
@@ -99,7 +125,16 @@
   }
 
   .review__text {
-    width: 768px;
+    width: 770px;
     margin-right: 50px;
+    margin-bottom: 39px;
+  }
+
+  .review__author {
+    letter-spacing: -0.02em;
+  }
+
+  .review__comment-button {
+    margin-top: 9px;
   }
 }

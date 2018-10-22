@@ -1,6 +1,8 @@
 .developed {
   display: flex;
   justify-content: space-around;
+  width: 215px;
+  margin: 0 auto;
 }
 
 .developed__text {
@@ -8,4 +10,12 @@
   @include font(19px, 18px);
   font-family: $font-title;
   color: $color-title;
+}
+
+@media (min-width: $desktop-width) {
+  .developed {
+    justify-content: space-between;
+    width: 185px;
+    margin: 0;
+  }
 }
