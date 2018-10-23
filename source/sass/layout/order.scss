@@ -1,6 +1,4 @@
 .order {
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 56px;
 }
 
@@ -15,6 +13,11 @@
   margin-bottom: 24px;
 
   @include font(13px, 24px);
+}
+
+.order__form {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .order__form-field {
@@ -260,14 +263,11 @@
 
 @media (min-width: $tablet-width) {
   .order {
-    width: 768px;
-    margin: 0 auto;
     margin-bottom: 47px;
   }
 
   .order__text-wrapper {
-    width: auto;
-    padding: 0 50px;
+    width: 669px;
   }
 
   .order__text {
@@ -282,7 +282,7 @@
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0;
+    width: 768px;
   }
 
   .order__form-field {
@@ -526,7 +526,6 @@
 
 @media (min-width: $desktop-width) {
   .order {
-    width: 1150px;
     margin-bottom: 56px;
   }
 
@@ -536,8 +535,16 @@
 
   .order__text {
     width: 672px;
-    margin-left: 176px;
   }
+
+  .order__text-wrapper {
+    width: 700px;
+    padding: 0;
+  }
+
+.order__form {
+  width: 1150px;
+}
 
   .order__form-field {
     &--color {

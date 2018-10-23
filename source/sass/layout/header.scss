@@ -1,9 +1,3 @@
 .header-page {
   position: relative;
 }
-
-@media (min-width: $tablet-width) {
-  .header-page {
-    background: linear-gradient(to bottom, transparent, transparent 88px, #fafafa 88px, #fafafa 180px);
-  }
-}

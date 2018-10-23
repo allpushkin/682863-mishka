@@ -21,7 +21,7 @@
   padding-left: 27px;
 
   &--basket {
-    min-height: 170px;
+    min-height: 173px;
   }
 }
 
@@ -33,8 +33,8 @@
   padding-top: 25px;
 
   &--basket {
-    min-height: 102px;
-    padding-top: 21px;
+    min-height: 109px;
+    padding-top: 24px;
   }
 }
 
@@ -87,7 +87,7 @@
     display: flex;
     min-height: 334px;
     padding-bottom: 0;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .catalog__item-title {
@@ -134,13 +134,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog {
-    width: 1150px;
-    margin: 0 auto;
-  }
-
   .catalog__wrapper {
-    width: auto;
+    width: 1150px;
   }
 
   .catalog__list {
