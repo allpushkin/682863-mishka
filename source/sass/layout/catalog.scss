@@ -73,6 +73,10 @@
   }
 }
 
+.catalog__item-image {
+  background-color: #f1f1f1;
+}
+
 @media (min-width: $tablet-width) {
   .catalog__wrapper {
     width: 768px;
@@ -83,7 +87,7 @@
     display: flex;
     min-height: 334px;
     padding-bottom: 0;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
   }
 
   .catalog__item-title {
@@ -111,7 +115,7 @@
   }
 
   .catalog__item-price {
-    padding-bottom: 27px;
+    padding-bottom: 32px;
     padding-left: 5px;
 
     @include font(17px, 24px);
@@ -157,7 +161,7 @@
     &--basket {
       min-height: 81px;
       padding-top: 0;
-      margin-top: 26px;
+      margin-top: 23px;
     }
   }
 
