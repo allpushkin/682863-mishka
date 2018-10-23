@@ -53,7 +53,7 @@
   .review {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 162px;
+    margin-bottom: 150px;
   }
 
   .review__wrapper {
@@ -61,14 +61,17 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    min-height: 457px;
     width: auto;
     padding: 0 50px;
     padding-top: 80px;
+
+    @include background("../../img/review@1x.jpg");
   }
 
   .review__title {
     @include font(43px, 50px);
-    margin-bottom: 48px;
+    margin-bottom: 39px;
     order: -2;
   }
 
@@ -84,7 +87,7 @@
     @include font(17px, 30px);
     letter-spacing: 0;
     width: 643px;
-    margin-bottom: 58px;
+    margin-bottom: 50px;
   }
 
   .review__author-container {
@@ -118,10 +121,13 @@
   .review__wrapper {
     padding: 0 50px;
     padding-left: 223px;
+    padding-top: 70px;
+    background-position: 50px 0;
   }
 
   .review__title {
     @include font(53px, 57px);
+    margin-bottom: 48px;
   }
 
   .review__text {
@@ -132,6 +138,10 @@
 
   .review__author {
     letter-spacing: -0.02em;
+  }
+
+  .review__author-container {
+    margin-bottom: 90px;
   }
 
   .review__comment-button {

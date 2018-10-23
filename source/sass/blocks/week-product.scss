@@ -100,6 +100,9 @@
 
   .week-product__image {
     height: 100px;
+    width: 333px;
+    margin-left: 50px;
+    padding-top: 7px;
   }
 
   .week-product__buy {
@@ -126,6 +129,7 @@
 
   .week-product__wrapper {
     padding: 0 75px;
+    padding-right: 50px;
   }
 
   .week-product__container-title {
@@ -153,10 +157,9 @@
   }
 
   .week-product__image {
-    width: 300px;
-    height: 100px;
-    margin-top: -70px;
-    margin-left: 140px;
+    width: 525px;
+    margin-top: -165px;
+    margin-left: 64px;
     z-index: -2;
   }
 }

@@ -180,9 +180,13 @@
                 </tr>
               </table>
             </div>
-            <figure class="week-product__image">
-              <img src="http://placehold.it/260x315" width="260" height="315" alt="Товар этой недели: вязаные корзинки">
-            </figure>
+            <div class="week-product__image">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Товар этой недели: вязаные корзинки">
+              </picture>
+            </div>
             <div class="week-product__buy">
               <b class="week-product__price">
                 Цена: 990 руб.
