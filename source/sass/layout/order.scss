@@ -332,6 +332,7 @@
 
   .order__form-label {
     @include font(19px, 20px);
+    height: 20px;
 
     &--type {
       width: 100%;

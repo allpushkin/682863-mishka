@@ -7,6 +7,11 @@
   margin: 0 auto;
 }
 
+.contacts__icon-zig-zag {
+  height: 8px;
+  margin-bottom: 39px;
+}
+
 .contacts__title {
   @include font(18px, 30px);
   margin-bottom: 23px;
@@ -74,6 +79,11 @@
     padding: 0 50px;
   }
 
+  .contacts__icon-zig-zag {
+    height: auto;
+    margin-bottom: 58px;
+  }
+
   .contacts__title {
     @include font(43px, 50px);
     margin-bottom: 48px;
@@ -137,6 +147,10 @@
     padding: 0;
     padding-top: 70px;
     margin-right: 49px;
+  }
+
+  .contacts__icon-zig-zag {
+    margin-bottom: 70px;
   }
 
   .contacts__title {

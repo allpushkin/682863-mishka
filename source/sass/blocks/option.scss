@@ -54,9 +54,15 @@
   }
 }
 
+.option__icon-zig-zag {
+  display: none;
+  width: 100%;
+  margin-top: -15px;
+}
+
 @media (min-width: $tablet-width) {
   .option {
-    margin-bottom: 65px;
+    margin-bottom: 39px;
   }
 
   .option__title {
@@ -87,16 +93,21 @@
 
   .option__list-link {
     width: 335px;
+    min-height: 120px;
     padding-top: 27px;
     padding-left: 34px;
 
     @include font(20px, 30px);
   }
+
+  .option__icon-zig-zag {
+    display: block;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .option {
-    margin-bottom: 140px;
+    margin-bottom: 112px;
   }
 
   .option__wrapper {

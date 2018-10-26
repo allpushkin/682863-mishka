@@ -7,6 +7,11 @@
   margin: 0 auto;
 }
 
+.advantages__icon-zig-zag {
+  height: 8px;
+  margin-bottom: 31px;
+}
+
 .advantages__title {
   margin-bottom: 30px;
 }
@@ -93,6 +98,11 @@
     padding: 0 50px;
   }
 
+  .advantages__icon-zig-zag {
+    height: auto;
+    margin-bottom: 48px;
+  }
+
   .advantages__title {
     margin-bottom: 53px;
 
@@ -148,6 +158,11 @@
   .advantages__wrapper {
     margin: 0 auto;
     padding: 0 220px;
+  }
+
+  .advantages__icon-zig-zag {
+    padding: 0 50px;
+    margin-bottom: 58px;
   }
 
   .advantages__title {
