@@ -56,6 +56,10 @@
     margin: 0;
     margin-right: 113px;
   }
+
+  svg {
+    color: rgba(20, 144, 128, 0.5);
+  }
 }
 
 .option__icon-zig-zag {
@@ -102,6 +106,23 @@
     padding-left: 34px;
 
     @include font(20px, 30px);
+
+    &:hover {
+      min-height: 125px;
+      margin-top: -5px;
+    }
+
+    &:hover svg {
+      color: rgba(20, 144, 128, 0.7);
+    }
+
+    &:active p {
+      opacity: 0.3;
+    }
+
+    &:active svg {
+      color: rgba(20, 144, 128, 0.3);
+    }
   }
 
   .option__icon-zig-zag {

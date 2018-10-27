@@ -47,19 +47,6 @@
   color: $color-title;
 
   position: relative;
-
-  &--basket::before {
-    content: "";
-
-    position: absolute;
-    top: 5px;
-    right: 190px;
-
-    width: 21px;
-    height: 18px;
-
-    @include background ("../../img/icon-cart.svg");
-  }
 }
 
 
@@ -75,12 +62,24 @@
     display: none;
   }
 
+  .main-nav__icon {
+    color: rgba(0, 0, 0, 0.2);
+  }
+
   .main-nav__link {
     @include font(15px, 24px);
 
     &--search {
       display: block;
       text-align: center;
+
+      &:hover svg {
+        color: rgba(99, 209, 187, 1);
+      }
+
+      &:active svg {
+        color: rgba(99, 209, 187, 0.3);
+      }
     }
 
     &--basket {
