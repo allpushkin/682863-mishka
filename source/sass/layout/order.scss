@@ -189,7 +189,7 @@
   }
 
   &--radio:hover ~ label::before,
-  &--radio::focus ~ label::before {
+  &--radio:focus ~ label::before {
     border-color: #62d1ba;
   }
 
