@@ -72,8 +72,10 @@
     &--search {
       display: block;
       text-align: center;
+      outline: none;
 
-      &:hover svg {
+      &:hover svg,
+      &:focus svg {
         color: rgba(99, 209, 187, 1);
       }
 

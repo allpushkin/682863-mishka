@@ -161,6 +161,19 @@
 
   border: none;
 
+  &:focus {
+    color: rgba(68, 68, 68, 1);
+  }
+
+  &:hover ~ label::before,
+  &:focus ~ label::before {
+    border-color: rgba(99, 209, 187, 1);
+  }
+
+  &:active ~ label::before {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
   &--radio ~ label::before {
     content: "";
 
@@ -173,6 +186,11 @@
 
     border: 2px solid #444444;
     border-radius: 50%;
+  }
+
+  &--radio:hover ~ label::before,
+  &--radio::focus ~ label::before {
+    border-color: #62d1ba;
   }
 
   &--radio:checked ~ label::after {
@@ -219,6 +237,12 @@
     min-height: 45px;
     padding-bottom: 8px;
     border-bottom: 2px solid #444444;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(99, 209, 187, 1);
+      outline: none;
+    }
   }
 
   &--tel {
@@ -228,6 +252,17 @@
     border-bottom: 2px solid #444444;
 
     letter-spacing: 0.06em;
+
+    @include background("../../img/icon-phone.svg");
+    background-position: 227px 1px;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(99, 209, 187, 1);
+      outline: none;
+
+      background-image: url("../../img/icon-phone-blue.svg");
+    }
   }
 
   &--mail {
@@ -235,6 +270,17 @@
     margin-top: 8px;
     padding-bottom: 14px;
     border-bottom: 2px solid #444444;
+
+    @include background("../../img/icon-mail.svg");
+    background-position: 225px 1px;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(99, 209, 187, 1);
+      outline: none;
+
+      background-image: url("../../img/icon-mail-blue.svg");
+    }
   }
 
   &--text {
@@ -245,6 +291,11 @@
     height: 143px;
     border: 2px solid #444444;
     resize: none;
+
+    &:hover,
+    &:focus {
+      border-color: rgba(99, 209, 187, 1);
+    }
   }
 }
 
@@ -444,6 +495,8 @@
       padding-left: 19px;
       border-bottom: 2px solid #000000;
       background-color: #f1f1f1;
+
+      background-position: 450px 4px;
     }
 
     &--tel {
@@ -582,6 +635,7 @@
     &--mail {
       width: 700px;
       margin-left: 225px;
+      background-position: 665px 1px;
     }
 
     &--text {

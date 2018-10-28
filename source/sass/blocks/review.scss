@@ -47,6 +47,16 @@
   width: 130px;
   padding: 13px 37px;
   border: 1px solid gray;
+  outline: none;
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 0.6;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

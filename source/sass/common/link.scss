@@ -1,5 +1,7 @@
-.link:hover {
+.link:hover,
+.link:focus {
   opacity: 0.6;
+  outline: none;
 }
 
 .link:active {

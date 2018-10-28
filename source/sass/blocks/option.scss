@@ -107,12 +107,14 @@
 
     @include font(20px, 30px);
 
-    &:hover {
+    &:hover,
+    &:focus {
       min-height: 125px;
       margin-top: -5px;
     }
 
-    &:hover svg {
+    &:hover svg,
+    &:focus svg {
       color: rgba(20, 144, 128, 0.7);
     }
 

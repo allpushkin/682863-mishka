@@ -11,6 +11,15 @@
   margin-bottom: 31px;
   padding-bottom: 26px;
   border: 1px solid #ececec;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .catalog__container-description {
@@ -44,6 +53,14 @@
 
   @include font(17px, 24px);
   letter-spacing: 0.06em;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .catalog__item-text {
@@ -68,6 +85,18 @@
 
 .catalog__item-image {
   background-color: #f1f1f1;
+}
+
+.catalog__icon-price {
+  color: rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    color: #63d1bb;
+  }
+
+  &:active {
+    color: rgba(99, 209, 187, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
