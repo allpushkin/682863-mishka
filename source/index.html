@@ -384,7 +384,7 @@
       </div>
     </footer>
 
-    <section class="modal  visually-hidden">
+    <section class="modal">
       <h2 class="visually-hidden">
         Выбрать размер и добавить в корзину
       </h2>
@@ -395,20 +395,25 @@
         <p class="modal__text  text">
           Выберите размер:
         </p>
-        <ul class="modal__size">
-          <li class="modal__size-item  modal__size-item--small">
-            s
-          </li>
-          <li class="modal__size-item  modal__size-item--medium">
-            m
-          </li>
-          <li class="modal__size-item  modal__size-item--large">
-            l
-          </li>
-        </ul>
-        <button class="modal__button-add  button  button-add">
-          Добавить
-        </button>
+        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+          <ul class="modal__size">
+            <li class="modal__size-item  modal__size-item--small">
+              <input class="modal__radio visually-hidden" type="radio" name="size" value="small" id="small" checked>
+              <label class="modal__label" for="small">s</label>
+            </li>
+            <li class="modal__size-item  modal__size-item--medium">
+              <input class="modal__radio visually-hidden" type="radio" name="size" value="medium" id="medium">
+              <label class="modal__label" for="medium">m</label>
+            </li>
+            <li class="modal__size-item  modal__size-item--large">
+              <input class="modal__radio visually-hidden" type="radio" name="size" value="large" id="large">
+              <label class="modal__label" for="large">l</label>
+            </li>
+          </ul>
+          <button class="modal__button  button  button-add">
+            Добавить
+          </button>
+        </form>
       </div>
     </section>
 
