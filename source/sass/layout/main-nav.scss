@@ -7,6 +7,10 @@
   position: absolute;
   top: 27px;
   right: 22px;
+
+  &--close {
+    display: none;
+  }
 }
 
 .main-nav__list {
