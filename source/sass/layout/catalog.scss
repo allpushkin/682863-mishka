@@ -54,12 +54,16 @@
   @include font(17px, 24px);
   letter-spacing: 0.06em;
 
-  &:hover {
-    opacity: 0.6;
-  }
+  &--link {
+    color: $color-title;
 
-  &:active {
-    opacity: 0.3;
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -80,7 +84,7 @@
   font-family: $font-title;
   color: $color-title;
 
-  position: relative;
+  cursor: default;
 }
 
 .catalog__item-image {
