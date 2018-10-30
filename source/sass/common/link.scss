@@ -1,0 +1,9 @@
+.link:hover,
+.link:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+.link:active {
+  opacity: 0.3;
+}

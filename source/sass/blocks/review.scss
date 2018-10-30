@@ -1,5 +1,5 @@
 .review {
-  margin-bottom: 87px;
+  margin-bottom: 35px;
 }
 
 .review__wrapper {
@@ -47,13 +47,23 @@
   width: 130px;
   padding: 13px 37px;
   border: 1px solid gray;
+  outline: none;
+
+  &:hover svg,
+  &:focus svg {
+    opacity: 0.6;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .review {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 70px;
   }
 
   .review__wrapper {
@@ -120,7 +130,7 @@
 @media (min-width: $desktop-width) {
   .review {
     width: 1150px;
-    margin-bottom: 98px;
+    margin-bottom: 12px;
   }
 
   .review__wrapper {

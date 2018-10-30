@@ -7,7 +7,8 @@
   "base/typography.scss",
   "base/fonts.scss";
 //
-@import "common/body-page.scss";
+@import "common/link.scss",
+  "common/body-page.scss";
 //
 @import "components/buttons.scss";
 //
