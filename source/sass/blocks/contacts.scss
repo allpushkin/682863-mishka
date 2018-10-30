@@ -200,6 +200,19 @@
     }
   }
 
+  .contacts__link-addr {
+    color: #444444;
+    border-bottom: 1px solid #46c1ae;
+    &:hover,
+    &:focus {
+      color: #46c1ae;
+    }
+    &:active {
+      color: #46c1ae;
+      opacity: 0.3;
+    }
+  }
+
   .contacts__map {
     width: 525px;
     height: 457px;
