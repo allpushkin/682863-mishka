@@ -14,7 +14,7 @@
 
 .contacts__title {
   @include font(18px, 30px);
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 }
 
 .contacts__icon-flag {
@@ -54,7 +54,7 @@
 .contacts__map {
   display: block;
   min-height: 457px;
-  margin-bottom: 41px;
+  margin-bottom: 34px;
 
   @include background("../../img/map-mobile@1x.jpg");
   background-size: 100%;
@@ -85,7 +85,7 @@
 
   .contacts__icon-zig-zag {
     height: auto;
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 
   .contacts__title-wrapper {

@@ -1,17 +1,17 @@
 .option {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   background-color: #fafafa;
 }
 
 .option__container-image {
-  min-height: 300px;
+  min-height: 282px;
 
   background-color: hsl(0, 0, 98);
 
   @include background("../../img/hero-mobile@1x.jpg");
-  background-position: 50% 5%;
+  background-position: 50% 20%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @include background("../../img/hero-mobile@2x.jpg");
@@ -21,7 +21,7 @@
 .option__title {
   width: 245px;
   margin: 0 auto;
-  padding-top: 85px;
+  padding-top: 71px;
 
   @include font(27px, 30px);
   font-family: $font-title;
@@ -39,7 +39,7 @@
   display: flex;
   min-height: 103px;
   min-width: 320px;
-  padding-top: 21px;
+  padding-top: 23px;
   padding-left: 28px;
 
   @include font(19px, 24px);
@@ -81,8 +81,8 @@
   }
 
   .option__container-image {
-    min-height: 627px;
-    margin-top: -92px;
+    min-height: 628px;
+    margin-top: -113px;
 
     @include background("../../img/hero-tablet@1x.jpg");
     background-size: 1150px 746px;

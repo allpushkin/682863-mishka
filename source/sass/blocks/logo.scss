@@ -1,7 +1,18 @@
 .logo {
   display: block;
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 18px;
+}
+
+.logo__link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

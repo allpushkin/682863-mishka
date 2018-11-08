@@ -4,7 +4,7 @@
   min-width: 320px;
   min-height: 177px;
 
-  @include font(18px, 177px);
+  @include font(18px, 170px);
   font-family: $font-title;
   color: $color-title;
   text-align: center;
@@ -19,7 +19,10 @@
 
 .top-title__wrapper {
   &--catalog {
-    margin-bottom: 31px;
+    margin-bottom: 28px;
+  }
+  &--order {
+    margin-bottom: 22px;
   }
 }
 
@@ -34,8 +37,8 @@
   }
 
   .top-title {
-    min-height: 223px;
-    margin-top: -92px;
+    min-height: 214px;
+    margin-top: -112px;
     margin-bottom: 83px;
     padding-top: 92px;
     background-color: transparent;

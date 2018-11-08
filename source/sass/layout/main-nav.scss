@@ -1,12 +1,16 @@
 .main-nav__wrapper {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 27px;
-  right: 22px;
+  top: 24px;
+  right: 126px;
+
+  background-color: transparent;
+  border: none;
 
   &--close {
     display: none;
