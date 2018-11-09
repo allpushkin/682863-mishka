@@ -57,9 +57,9 @@
 @media (min-width: $desktop-width) {
   .footer-page__wrapper {
     justify-content: space-between;
-    align-items: flex-end;
     width: auto;
     padding: 0 50px;
+    padding-top: 52px;
   }
 
   .footer-page__logo {

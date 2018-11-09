@@ -59,11 +59,10 @@
   display: flex;
   flex-direction: column;
   min-height: 125px;
-  justify-content: space-around;
 
   &--type {
     min-height: 115px;
-    padding-top: 10px;
+    padding-top: 23px;
   }
 
   &--color {
@@ -84,6 +83,15 @@
   @include font(17px, 18px);
   font-family: $font-title;
   position: relative;
+
+
+  &--type:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  &--color:not(:last-child) {
+    margin-bottom: 42px;
+  }
 
   &--type,
   &--color {
@@ -413,12 +421,12 @@
     }
 
     &--type {
-      justify-content: space-around;
       min-height: 151px;
       width: 397px;
       margin: 0 auto;
       margin-right: 163px;
       padding: 0;
+      padding-top: 27px;
     }
 
     &--initials {
@@ -436,6 +444,10 @@
 
     &--color {
       width: 135px;
+    }
+
+    &--type:not(:last-child) {
+      margin-bottom: 56px;
     }
 
     &--initials {
