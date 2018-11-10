@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/scripts.min.js" as="script">
+    <link rel="preload" href="js/picturefill.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css" as="style">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="body-page">
@@ -42,12 +47,12 @@
               <div class="main-nav__list-container">
                 <ul class="main-nav__list  main-nav__list--navigation  main-navigation  main-nav--nojs">
                   <li class="main-nav__item  main-nav__item--navigation">
-                    <a class="main-nav__link  link" href="catalog.html">
+                    <a class="main-nav__link  link" href="catalog.min.html">
                       Каталог товаров
                     </a>
                   </li>
                   <li class="main-nav__item  main-nav__item--navigation">
-                    <a class="main-nav__link  link" href="form.html">
+                    <a class="main-nav__link  link" href="form.min.html">
                       Вязание на заказ
                     </a>
                   </li>

@@ -37,8 +37,10 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"))
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(rename({suffix: ".min"}))
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("webp", function () {
