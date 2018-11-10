@@ -30,7 +30,7 @@
               </svg>
             </button>
             <div class="main-nav__list-wrapper">
-              <span class="logo">
+              <div class="logo">
                 <a class="logo__link">
                   <picture>
                     <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
@@ -38,7 +38,7 @@
                     <img src="img/logo-mobile.svg" alt="Главная страница">
                   </picture>
                 </a>
-              </span>
+              </div>
               <div class="main-nav__list-container">
                 <ul class="main-nav__list  main-nav__list--navigation  main-navigation">
                   <li class="main-nav__item  main-nav__item--navigation">
@@ -113,9 +113,8 @@
             <ul class="option__list">
               <li class="option__list-item">
                 <a class="option__list-link  option__list-link--accessories" href="#">
-                  <p>
-                    Предметы<br>
-                    интерьера
+                  <p class="option__link-text">
+                    Предметы интерьера
                   </p>
                   <svg width="40.219px" height="62.411px">
                     <use xlink:href="#icon-interior"></use>
@@ -124,9 +123,8 @@
               </li>
               <li class="option__list-item">
                 <a class="option__list-link  option__list-link--toys" href="#">
-                  <p>
-                    Детские<br>
-                    игрушки
+                  <p class="option__link-text">
+                    Детские игрушки
                   </p>
                   <svg width="60px" height="59.62px">
                     <use xlink:href="#icon-toy"></use>
@@ -338,7 +336,7 @@
             </div>
           </div>
           <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2164205758509!2d30.323174966485375!3d59.938948089085635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1540283879404" allowfullscreen></iframe>
+            <iframe class="contacts__map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1413.2164205758509!2d30.323174966485375!3d59.938948089085635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1540283879404" allowfullscreen></iframe>
           </div>
           <a class="contacts__feedback  button  button-feedback" href="#">
             Напишите нам
@@ -433,5 +431,6 @@
     </section>
 
     <script src="js/scripts.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
