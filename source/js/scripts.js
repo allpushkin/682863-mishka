@@ -8,6 +8,11 @@ var background = document.querySelector(".modal__background");
 
 var linkCatalog = document.querySelectorAll(".catalog__icon-price");
 
+for(var i = 0; i < menu.length; i++) {
+  menu[i].classList.remove("main-nav--nojs");
+}
+
+menuOpen.classList.remove("main-nav__toggle--nojs");
 
 if(menuOpen) {
   menuOpen.addEventListener("click", function(evt) {
