@@ -10,7 +10,7 @@
 .order__text {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 7px;
 
   @include font(13px, 24px);
 }
@@ -27,30 +27,35 @@
   border: none;
 
   &--type {
-    margin-bottom: 31px;
+    margin-bottom: 14px;
   }
 
   &--color {
-    margin-bottom: 43px;
+    margin-bottom: 25px;
   }
 
   &--initials {
-    margin-bottom: 33px;
+    margin-bottom: 16px;
   }
 
   &--tel {
     min-height: 74px;
-    margin-bottom: 33px;
+    margin-bottom: 15px;
   }
 
   &--email {
     min-height: 74px;
-    margin-bottom: 33px;
+    margin-bottom: 18px;
   }
 
   &--text {
-    min-height: 298px;
+    min-height: 315px;
   }
+}
+
+.order__form-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .order__form-list {
@@ -331,13 +336,13 @@
 
   .order__text-wrapper {
     width: 669px;
+    margin-bottom: 61px;
   }
 
   .order__text {
     @include font(17px, 30px);
     width: 615px;
     margin: 0;
-    margin-bottom: 18px;
   }
 
   .order__form {
@@ -356,40 +361,46 @@
     }
 
     &--color {
-      min-height: 313px;
-      padding-top: 55px;
-      margin-bottom: 36px;
+      min-height: 305px;
+      padding-top: 61px;
+      margin-bottom: 43px;
       background-color: #f1f1f1;
     }
 
     &--tel {
       min-height: 114px;
       margin: 0;
-      padding-top: 25px;
+      padding-top: 46px;
       background-color: #f1f1f1;
     }
 
     &--initials {
-      margin-bottom: 30px;
+      padding-top: 11px;
+      margin-bottom: 25px;
     }
 
     &--email {
       min-height: 90px;
       margin: 0;
+      padding-top: 24px;
       padding-bottom: 7px;
       background-color: #f1f1f1;
     }
 
     &--text {
       min-height: 195px;
-      margin-bottom: 28px;
+      margin-bottom: 12px;
     }
+  }
+
+  .order__form-wrapper {
+    flex-direction: row;
   }
 
   .order__communication-wrapper {
     min-height: 227px;
     padding: 0;
-    margin-bottom: 17px;
+    margin-bottom: 39px;
     background-color: #f1f1f1;
   }
 
@@ -426,7 +437,6 @@
       margin: 0 auto;
       margin-right: 163px;
       padding: 0;
-      padding-top: 27px;
     }
 
     &--initials {
@@ -492,12 +502,6 @@
       left: 21px;
     }
 
-    &--tel,
-    &--mail,
-    &--text {
-      margin-left: 217px;
-    }
-
     &--initials {
       width: 100%;
       margin-left: 25px;
@@ -517,11 +521,13 @@
 
     &--tel {
       min-height: 45px;
+      margin-left: 136px;
     }
 
     &--mail {
       padding-bottom: 10px;
       margin-top: 0;
+      margin-left: 110px;
     }
 
     &--text {
@@ -529,45 +535,30 @@
       height: 142px;
       padding-left: 15px;
       padding-top: 13px;
+      margin-left: 127px;
     }
   }
 
   .order__form-title {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    margin-left: 49px;
+    margin-top: 5px;
 
     &::after {
       content: none;
     }
 
-    &--type {
-      top: 56px;
-      left: 23px;
-    }
-
-    &--color {
-      top: 76px;
-      left: 23px;
-    }
-
     &--initials {
-      top: 31px;
-      left: 21px;
-      margin-bottom: 5px;
+      margin-top: 11px;
     }
 
     &--tel {
-      top: 64px;
-      left: 52px;
-    }
-
-    &--mail {
-      top: 25px;
-      left: 52px;
+      margin-top: 21px;
     }
 
     &--text {
-      top: 46px;
-      left: 22px;
+      margin-top: 29px;
     }
   }
 
@@ -618,25 +609,31 @@
 
   .order__form-field {
     &--color {
-      min-height: 237px;
+      min-height: 227px;
+      margin-bottom: 54px;
     }
 
     &--text {
-      margin-bottom: 23px;
+      margin-bottom: 7px;
+    }
+
+    &--initials {
+      padding-top: 2px;
     }
   }
 
   .order__form-list {
-    margin-left: 212px;
+    margin-left: 63px;
 
     &--color {
       min-height: 155px;
       width: 720px;
+      margin-left: 57px;
     }
 
     &--initials {
       width: 698px;
-      margin-left: 225px;
+      margin-left: 70px;
     }
   }
 
@@ -650,13 +647,17 @@
     &--tel,
     &--mail {
       width: 700px;
-      margin-left: 225px;
+      margin-left: 81px;
       background-position: 665px 1px;
+    }
+
+    &--mail {
+      margin-left: 54px;
     }
 
     &--text {
       width: 701px;
-      margin-left: 223px;
+      margin-left: 72px;
     }
   }
 
@@ -669,15 +670,19 @@
   }
 
   .order__form-title {
-    left: 81px;
+    margin-top: 4px;
+    margin-left: 112px;
 
-    &--tel {
-      left: 112px;
+    &--initials {
+      margin-top: 12px;
     }
 
-    &--mail {
-      top: 25px;
-      left: 110px;
+    &--tel {
+      margin-top: 21px;
+    }
+
+    &--text {
+      margin-top: 29px;
     }
   }
 }
