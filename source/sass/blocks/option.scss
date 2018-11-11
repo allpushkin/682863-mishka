@@ -53,11 +53,6 @@
     background-color: #56c3b2;
   }
 
-  p {
-    margin: 0;
-    margin-right: 113px;
-  }
-
   svg {
     color: rgb(20, 144, 128);
     opacity: 0.5;
@@ -66,6 +61,8 @@
 
 .option__link-text {
   width: 113px;
+  margin: 0;
+  margin-right: 98px;
 }
 
 .option__icon-zig-zag {
@@ -130,6 +127,14 @@
 
     &:active svg {
       opacity: 0.3;
+    }
+  }
+
+  .option__link-text {
+    margin-right: 108px;
+
+    &--toys {
+      margin-right: 91px;
     }
   }
 

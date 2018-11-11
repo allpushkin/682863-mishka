@@ -53,19 +53,20 @@
 
   @include font(17px, 24px);
   letter-spacing: 0.06em;
+}
 
-  &--link {
-    color: $color-title;
+.catalog__item-title-link {
+  color: $color-title;
 
-    &:hover {
-      opacity: 0.6;
-    }
+  &:hover {
+    opacity: 0.6;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  &:active {
+    opacity: 0.3;
   }
 }
+
 
 .catalog__item-text {
   @include font(13px, 30px);

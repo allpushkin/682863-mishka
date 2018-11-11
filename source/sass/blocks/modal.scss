@@ -11,24 +11,6 @@
   background-color: #ffffff;
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0.1;
-  }
-}
-
-.modal__background {
-  &--opacity {
-    animation-name: opacity;
-    animation-duration: 100ms;
-    animation-fill-mode: forwards;
-  }
-}
-
 .modal__wrapper {
   display: flex;
   flex-direction: column;

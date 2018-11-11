@@ -17,7 +17,7 @@
       <include src="build/img/sprite.svg"></include>
     </div>
 
-    <div class="modal__background">
+    <div class="overlay">
 
       <header class="header-page">
         <nav class="main-nav">
@@ -45,7 +45,7 @@
                 </a>
               </div>
               <div class="main-nav__list-container">
-                <ul class="main-nav__list  main-nav__list--navigation  main-navigation  main-nav--nojs">
+                <ul class="main-nav__list  main-nav__list--navigation  main-navigation  main-nav__list--nojs">
                   <li class="main-nav__item  main-nav__item--navigation">
                     <a class="main-nav__link  link" href="catalog.min.html">
                       Каталог товаров
@@ -71,7 +71,7 @@
                 </ul>
               </div>
             </div>
-            <ul class="main-nav__list  main-nav__list--user  main-navigation  main-nav--nojs">
+            <ul class="main-nav__list  main-nav__list--user  main-navigation  main-nav__list--nojs">
               <li class="main-nav__item  main-nav__item-search">
                 <a class="main-nav__link  main-nav__link--search" href="#">
                   <svg class="main-nav__icon  main-nav__icon--search" width="17.6px" height="17.6px" fill="currentColor">
@@ -128,7 +128,7 @@
               </li>
               <li class="option__list-item">
                 <a class="option__list-link  option__list-link--toys" href="#">
-                  <p class="option__link-text">
+                  <p class="option__link-text  option__link-text--toys">
                     Детские игрушки
                   </p>
                   <svg width="60px" height="59.62px">
@@ -188,9 +188,9 @@
               </div>
               <div class="week-product__image">
                 <picture>
-                  <source type="img/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-                  <source type="img/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-                  <source type="img/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
                   <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
                   <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Товар этой недели: вязаные корзинки">
@@ -286,6 +286,7 @@
                   <svg class="review__comment-link-icon" width="50px" height="26.003px">
                     <use xlink:href="#icon-left-arrow"></use>
                   </svg>
+                  <span class="visually-hidden">Предыдущий отзыв</span>
                 </a>
               </li>
               <li class="review__comment-list-item">
@@ -293,6 +294,7 @@
                   <svg class="review__comment-link-icon" width="50px" height="26.003px">
                     <use xlink:href="#icon-right-arrow"></use>
                   </svg>
+                  <span class="visually-hidden">Следующий отзыв</span>
                 </a>
               </li>
             </ul>
