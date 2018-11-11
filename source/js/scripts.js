@@ -4,12 +4,12 @@ var menu = document.querySelectorAll(".main-navigation");
 
 var link = document.querySelector(".week-product__button-buy");
 var popup = document.querySelector(".modal");
-var background = document.querySelector(".modal__background");
+var overlay = document.querySelector(".overlay");
 
 var linkCatalog = document.querySelectorAll(".catalog__icon-price");
 
 for(var i = 0; i < menu.length; i++) {
-  menu[i].classList.remove("main-nav--nojs");
+  menu[i].classList.remove("main-nav__list--nojs");
 }
 
 menuOpen.classList.remove("main-nav__toggle--nojs");
@@ -40,7 +40,7 @@ if(link) {
   link.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
-    background.classList.add("modal__background--opacity");
+    overlay.classList.add("overlay--opacity");
   });
 };
 
@@ -49,16 +49,16 @@ if(linkCatalog) {
     linkCatalog[i].addEventListener("click", function(evt) {
       evt.preventDefault();
       popup.classList.add("modal-show");
-      background.classList.add("modal__background--opacity");
+      overlay.classList.add("overlay--opacity");
     })
   };
 }
 
-if(background) {
-  background.addEventListener("mouseup", function(evt) {
+if(overlay) {
+  overlay.addEventListener("mouseup", function(evt) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
-    background.classList.remove("modal__background--opacity");
+    overlay.classList.remove("overlay--opacity");
   });
 }
 
@@ -66,6 +66,6 @@ window.addEventListener("keydown", function(evt) {
   if(evt.keyCode === 27) {
     evt.preventDefault();
     popup.classList.remove("modal-show");
-    background.classList.remove("modal__background--opacity");
+    overlay.classList.remove("overlay--opacity");
   }
 });

@@ -1,0 +1,17 @@
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.overlay {
+  &--opacity {
+    animation-name: opacity;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+  }
+}
