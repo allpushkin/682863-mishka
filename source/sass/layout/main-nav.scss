@@ -295,6 +295,11 @@
     &--navigation {
       width: 156px;
       padding-top: 32px;
+
+      &:first-child {
+        width: 185px;
+        border-right: 1px solid #ececec;
+      }
     }
 
     &--update {
