@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/scripts.min.js" as="script">
+    <link rel="preload" href="js/picturefill.js" as="script">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <title>HTML Academy: Мишка, каталог товаров</title>
   </head>
@@ -17,7 +22,7 @@
       <header class="header-page">
         <nav class="main-nav">
           <div class="main-nav__wrapper">
-            <button class="main-nav__toggle  main-nav__toggle--open" type="submit">
+            <button class="main-nav__toggle  main-nav__toggle--open  main-nav__toggle--nojs" type="submit">
               <span class="visually-hidden">Открыть меню</span>
               <svg width="19.958px" height="14px">
                 <use xlink:href="#icon-menu-open"></use>
@@ -30,24 +35,24 @@
               </svg>
             </button>
             <div class="main-nav__list-wrapper">
-              <span class="logo">
-                <a class="logo__link" href="index.html">
+              <div class="logo">
+                <a class="logo__link" href="index.min.html">
                   <picture>
                     <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
                     <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                     <img src="img/logo-mobile.svg" alt="Главная страница">
                   </picture>
                 </a>
-              </span>
+              </div>
               <div class="main-nav__list-container">
-                <ul class="main-nav__list  main-nav__list--navigation  main-navigation">
+                <ul class="main-nav__list  main-nav__list--navigation  main-navigation  main-nav--nojs">
                   <li class="main-nav__item  main-nav__item--navigation">
                     <a class="main-nav__link  link">
                       Каталог товаров
                     </a>
                   </li>
                   <li class="main-nav__item  main-nav__item--navigation">
-                    <a class="main-nav__link  link" href="form.html">
+                    <a class="main-nav__link  link" href="form.min.html">
                       Вязание на заказ
                     </a>
                   </li>
@@ -66,7 +71,7 @@
                 </ul>
               </div>
             </div>
-            <ul class="main-nav__list  main-nav__list--user  main-navigation">
+            <ul class="main-nav__list  main-nav__list--user  main-navigation  main-nav--nojs">
               <li class="main-nav__item  main-nav__item-search">
                 <a class="main-nav__link  main-nav__link--search" href="#">
                   <svg class="main-nav__icon  main-nav__icon--search" width="17.6px" height="17.6px" fill="currentColor">
@@ -79,7 +84,7 @@
               </li>
               <li class="main-nav__item  main-nav__item--basket">
                 <a class="main-nav__link  main-nav__link--basket  link" href="#">
-                  <svg width="20.294" height="18.849" fill="currentColor">
+                  <svg class="main-nav__icon  main-nav__icon--basket" width="20.294" height="18.849" fill="currentColor">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
                   Корзина: пока пуста
@@ -114,14 +119,16 @@
           <div class="catalog__wrapper">
             <ul class="catalog__list">
               <li class="catalog__item">
-                <picture>
-                  <source type="img/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
-                  <source type="img/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
-                  <source type="img/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
-                  <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
-                  <img class="catalog__item-image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик за 1200 рублей">
-                </picture>
+                <a class="catalog__item-link" href="#">
+                  <picture>
+                    <source type="img/webp" media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.webp 1x, img/photo-hare-desktop@2x.webp 2x">
+                    <source type="img/webp" media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.webp 1x, img/photo-hare-tablet@2x.webp 2x">
+                    <source type="img/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
+                    <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                    <img class="catalog__item-image" src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик за 1200 рублей">
+                  </picture>
+                </a>
                 <div class="catalog__container-description">
                   <div class="catalog__description-wrapper">
                     <h3 class="catalog__item-title">
@@ -134,9 +141,9 @@
                     </p>
                   </div>
                   <div class="catalog__price-wrapper">
-                    <p class="catalog__item-price">
+                    <b class="catalog__item-price">
                       1 200 руб.
-                    </p>
+                    </b>
                     <a class="catalog__icon-price" href="#">
                       <svg width="20.294" height="18.849" fill="currentColor">
                         <use xlink:href="#icon-cart"></use>
@@ -146,14 +153,16 @@
                 </div>
               </li>
               <li class="catalog__item">
-                <picture>
-                  <source type="img/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x,  img/photo-bowl-desktop@2x.webp 2x">
-                  <source type="img/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
-                  <source type="img/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
-                  <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x,  img/photo-bowl-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
-                  <img class="catalog__item-image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья зя 600 рублей">
-                </picture>
+                <a class="catalog__item-link" href="#">
+                  <picture>
+                    <source type="img/webp" media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.webp 1x,  img/photo-bowl-desktop@2x.webp 2x">
+                    <source type="img/webp" media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.webp 1x, img/photo-bowl-tablet@2x.webp 2x">
+                    <source type="img/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
+                    <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x,  img/photo-bowl-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                    <img class="catalog__item-image" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья зя 600 рублей">
+                  </picture>
+                </a>
                 <div class="catalog__container-description">
                   <div class="catalog__description-wrapper">
                     <h3 class="catalog__item-title">
@@ -166,9 +175,9 @@
                     </p>
                   </div>
                   <div class="catalog__price-wrapper">
-                    <p class="catalog__item-price">
+                    <b class="catalog__item-price">
                       690 руб.
-                    </p>
+                    </b>
                     <a class="catalog__icon-price" href="#">
                       <svg width="20.294" height="18.849" fill="currentColor">
                         <use xlink:href="#icon-cart"></use>
@@ -178,7 +187,7 @@
                 </div>
               </li>
               <li class="catalog__item">
-                <a href="#">
+                <a class="catalog__item-link" href="#">
                   <picture>
                     <source type="img/webp" media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.webp 1x, img/photo-toys-desktop@2x.webp 2x">
                     <source type="img/webp" media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.webp 1x, img/photo-toys-tablet@2x.webp 2x">
@@ -200,9 +209,9 @@
                     </p>
                   </div>
                   <div class="catalog__price-wrapper">
-                    <p class="catalog__item-price  catalog__item-price--baskets">
+                    <b class="catalog__item-price  catalog__item-price--baskets">
                       1 500 руб.
-                    </p>
+                    </b>
                     <a class="catalog__icon-price" href="#">
                       <svg width="20.294" height="18.849" fill="currentColor">
                         <use xlink:href="#icon-cart"></use>
@@ -253,7 +262,7 @@
       <footer class="footer-page">
         <div class="footer-page__wrapper">
           <div class="footer-page__logo  footer-logo">
-            <a href="index.html">
+            <a href="index.min.html">
               <svg class="footer-page__logo-icon" width="101.615px" height="34.056px">
                 <use xlink:href="#icon-logo-footer"></use>
               </svg>
@@ -337,6 +346,7 @@
     </section>
 
 
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
   </body>
 </html>

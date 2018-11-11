@@ -70,6 +70,26 @@
   }
 }
 
+.contacts__map-google {
+  border: none;
+}
+
+.contacts__link-addr {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #46c1ae;
+  color: #444444;
+
+
+  &:hover,
+  &:focus {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .contacts {
@@ -160,13 +180,13 @@
   .contacts__wrapper {
     display: block;
     padding: 0;
-    padding-top: 70px;
+    padding-top: 62px;
     margin-right: 49px;
   }
 
   .contacts__icon-zig-zag {
     padding: 0 50px;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
 
   .contacts__title-wrapper {
@@ -176,9 +196,8 @@
 
   .contacts__title {
     @include font(53px, 57px);
-    padding-top: 0;
+    padding-top: 9px;
     padding-right: 33px;
-    margin-bottom: 47px;
   }
 
   .contacts__container-address {
@@ -198,21 +217,6 @@
 
     &--email {
       margin-bottom: 31px;
-    }
-  }
-
-  .contacts__link-addr {
-    color: #444444;
-    border-bottom: 1px solid #46c1ae;
-
-    &:hover,
-    &:focus {
-      color: #46c1ae;
-    }
-
-    &:active {
-      color: #46c1ae;
-      opacity: 0.3;
     }
   }
 

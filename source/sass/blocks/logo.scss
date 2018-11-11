@@ -21,11 +21,13 @@
     margin: 0;
     padding-top: 22px;
     padding-left: 48px;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
   .logo {
     padding: 9px 51px 0 0;
+    text-align: center;
   }
 }
